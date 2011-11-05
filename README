@@ -1,0 +1,39 @@
+Ease: A presentation application for the GNOME Desktop
+
+Building
+----------------------
+To build Ease, install the following tools:
+
+- valac => 0.8.1
+- gcc (or clang)
+- make
+- tar
+
+As well as these dependencies:
+
+- gtk+2.0
+- pango
+- clutter-gst-1.0
+- clutter-1.0
+- clutter-gtk-0.10
+- gee-1.0
+- cogl-1.0
+- gio-2.0
+- json-glib-1.0
+- libarchive
+- rest-extras-0.6
+
+Remember to install the introspection packages as well, which
+look like this :
+
+- gir1.0-clutter-1.0
+- gir1.0-clutter-gtk-0.10
+...
+
+Run the autogen script by typing : `./autogen.sh`
+
+Then, type `make` or `make CC=clang` if you want to use clang.
+
+Running
+----------------------
+`./ease`

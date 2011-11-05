@@ -1,0 +1,30 @@
+{
+	"title" : "Goddard",
+	"author" : "Nate Stedman <natesm@gmail.com>",
+	
+	"master-defaults" : {
+		"background-type" : "background-type-image",
+		"background-image" : "Media/default.jpg"
+	},
+	
+	"element-defaults" : {
+		"text-color" : "1, 1, 1",
+		"text-font" : "DejaVu Sans",
+		"text-weight" : "300"
+	},
+	
+	"elements" : {
+		"author-text" : {
+			"padding-top" : "0",
+			"height" : "100",
+			"text-size" : "40",
+			"text-align" : "left"
+		},
+		
+		"title-text" : {
+			"height" : "90",
+			"text-size" : "64",
+			"text-align" : "left"
+		}
+	}
+}

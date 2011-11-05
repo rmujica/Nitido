@@ -1,0 +1,5 @@
+2010-08-16  Stéphane Maniaci <stephane.maniaci@gmail.com>
+
+        * *: The ChangeLog is auto-generated when releasing. If you
+	        are seeing this, use 'git log' for a detailed list of
+		changes.

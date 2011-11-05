@@ -1,0 +1,612 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkVBox" id="Editor Widget">
+    <property name="visible">True</property>
+    <child>
+      <object class="GtkMenuBar" id="Menu Bar">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkMenuItem" id="File Item">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">_File</property>
+            <property name="use_underline">True</property>
+            <child type="submenu">
+              <object class="GtkMenu" id="File Menu">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkImageMenuItem" id="New">
+                    <property name="label">gtk-new</property>
+                    <property name="visible">True</property>
+                    <property name="use_underline">True</property>
+                    <property name="use_stock">True</property>
+                    <property name="accel_group">accel-group</property>
+                    <signal name="activate" handler="ease_main_show_welcome"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImageMenuItem" id="Open">
+                    <property name="label">gtk-open</property>
+                    <property name="visible">True</property>
+                    <property name="use_underline">True</property>
+                    <property name="use_stock">True</property>
+                    <property name="accel_group">accel-group</property>
+                    <signal name="activate" handler="ease_editor_window_on_open"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkSeparatorMenuItem" id="menuitem1">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImageMenuItem" id="Save">
+                    <property name="label">gtk-save</property>
+                    <property name="visible">True</property>
+                    <property name="use_underline">True</property>
+                    <property name="use_stock">True</property>
+                    <property name="accel_group">accel-group</property>
+                    <signal name="activate" handler="ease_editor_window_save_document"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImageMenuItem" id="Save As">
+                    <property name="label">gtk-save-as</property>
+                    <property name="visible">True</property>
+                    <property name="use_underline">True</property>
+                    <property name="use_stock">True</property>
+                    <property name="accel_group">accel-group</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImageMenuItem" id="Save a Copy">
+                    <property name="label" translatable="yes">Save a _Copy</property>
+                    <property name="visible">True</property>
+                    <property name="use_underline">True</property>
+                    <property name="image">image1</property>
+                    <property name="use_stock">False</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkSeparatorMenuItem" id="separatormenuitem1">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="Export">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">_Export Presentation</property>
+                    <property name="use_underline">True</property>
+                    <child type="submenu">
+                      <object class="GtkMenu" id="menu1">
+                        <property name="visible">True</property>
+                        <child>
+                          <object class="GtkMenuItem" id="PDF Export">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">_PDF</property>
+                            <property name="use_underline">True</property>
+                            <signal name="activate" handler="ease_editor_window_export_as_pdf"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="PostScript">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Post_Script</property>
+                            <property name="use_underline">True</property>
+                            <signal name="activate" handler="ease_editor_window_export_as_postscript"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="HTML Export">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">_HTML</property>
+                            <property name="use_underline">True</property>
+                            <signal name="activate" handler="ease_editor_window_export_as_html"/>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkSeparatorMenuItem" id="menuitem2">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImageMenuItem" id="Quit">
+                    <property name="label">gtk-quit</property>
+                    <property name="visible">True</property>
+                    <property name="use_underline">True</property>
+                    <property name="use_stock">True</property>
+                    <property name="accel_group">accel-group</property>
+                    <signal name="activate" handler="ease_editor_window_on_quit"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkMenuItem" id="Edit Item">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">_Edit</property>
+            <property name="use_underline">True</property>
+            <child type="submenu">
+              <object class="GtkMenu" id="Edit Menu">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkImageMenuItem" id="Cut">
+                    <property name="label">gtk-cut</property>
+                    <property name="visible">True</property>
+                    <property name="use_underline">True</property>
+                    <property name="use_stock">True</property>
+                    <property name="accel_group">accel-group</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImageMenuItem" id="Copy">
+                    <property name="label">gtk-copy</property>
+                    <property name="visible">True</property>
+                    <property name="use_underline">True</property>
+                    <property name="use_stock">True</property>
+                    <property name="accel_group">accel-group</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImageMenuItem" id="Paste">
+                    <property name="label">gtk-paste</property>
+                    <property name="visible">True</property>
+                    <property name="use_underline">True</property>
+                    <property name="use_stock">True</property>
+                    <property name="accel_group">accel-group</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImageMenuItem" id="Delete">
+                    <property name="label">gtk-delete</property>
+                    <property name="visible">True</property>
+                    <property name="use_underline">True</property>
+                    <property name="use_stock">True</property>
+                    <property name="accel_group">accel-group</property>
+                    <signal name="activate" handler="ease_editor_window_on_delete"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkSeparatorMenuItem" id="separatormenuitem2">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="raise">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">_Raise</property>
+                    <property name="use_underline">True</property>
+                    <signal name="activate" handler="ease_editor_window_on_raise"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="lower">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">_Lower</property>
+                    <property name="use_underline">True</property>
+                    <signal name="activate" handler="ease_editor_window_on_lower"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="raise-top">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Raise to _Top</property>
+                    <property name="use_underline">True</property>
+                    <signal name="activate" handler="ease_editor_window_on_raise_top"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="lower-bottom">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Lower to _Bottom</property>
+                    <property name="use_underline">True</property>
+                    <signal name="activate" handler="ease_editor_window_on_lower_bottom"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkMenuItem" id="Insert">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">_Insert</property>
+            <property name="use_underline">True</property>
+            <child type="submenu">
+              <object class="GtkMenu" id="menu2">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkMenuItem" id="Insert Image">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">_Image</property>
+                    <property name="use_underline">True</property>
+                    <signal name="activate" handler="ease_editor_window_insert_image"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="Insert Video">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">_Video</property>
+                    <property name="use_underline">True</property>
+                    <signal name="activate" handler="ease_editor_window_insert_video"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="Insert PDF">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">_PDF Document</property>
+                    <property name="use_underline">True</property>
+                    <signal name="activate" handler="ease_editor_window_insert_pdf"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkSeparatorMenuItem" id="&lt;separator&gt;">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="menuitem6">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Media from the _Web</property>
+                    <property name="use_underline">True</property>
+                    <signal name="activate" handler="ease_editor_window_on_insert_web_media"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkSeparatorMenuItem" id="menuitem3">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="Insert Text">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">_Text</property>
+                    <property name="use_underline">True</property>
+                    <signal name="activate" handler="ease_editor_window_insert_text"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkSeparatorMenuItem" id="menuitem4">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="Insert Rectangle">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">_Rectangle</property>
+                    <property name="use_underline">True</property>
+                    <signal name="activate" handler="ease_editor_window_on_insert_rectangle"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="Insert Oval">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">_Oval</property>
+                    <property name="use_underline">True</property>
+                    <signal name="activate" handler="ease_editor_window_on_insert_oval"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkMenuItem" id="View Item">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">_View</property>
+            <property name="use_underline">True</property>
+            <child type="submenu">
+              <object class="GtkMenu" id="menu3">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkRadioMenuItem" id="editor-radio">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Editor</property>
+                    <property name="use_underline">True</property>
+                    <property name="active">True</property>
+                    <property name="draw_as_radio">True</property>
+                    <signal name="activate" handler="ease_editor_window_set_view"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkRadioMenuItem" id="slide-sorter-radio">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Slide Sorter</property>
+                    <property name="use_underline">True</property>
+                    <property name="draw_as_radio">True</property>
+                    <property name="group">editor-radio</property>
+                    <signal name="activate" handler="ease_editor_window_set_view"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkSeparatorMenuItem" id="menuitem5">
+                    <property name="visible">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImageMenuItem" id="Zoom In">
+                    <property name="label">gtk-zoom-in</property>
+                    <property name="visible">True</property>
+                    <property name="use_underline">True</property>
+                    <property name="use_stock">True</property>
+                    <property name="accel_group">accel-group</property>
+                    <signal name="activate" handler="ease_editor_window_zoom_in"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImageMenuItem" id="Zoom Out">
+                    <property name="label">gtk-zoom-out</property>
+                    <property name="visible">True</property>
+                    <property name="use_underline">True</property>
+                    <property name="use_stock">True</property>
+                    <property name="accel_group">accel-group</property>
+                    <signal name="activate" handler="ease_editor_window_zoom_out"/>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkCheckMenuItem" id="Zoom Fit">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Zoom to _Fit</property>
+                    <property name="use_underline">True</property>
+                    <signal name="toggled" handler="ease_editor_window_on_zoom_fit"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkMenuItem" id="Help Item">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">_Help</property>
+            <property name="use_underline">True</property>
+            <child type="submenu">
+              <object class="GtkMenu" id="Help Menu">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkImageMenuItem" id="About">
+                    <property name="label">gtk-about</property>
+                    <property name="visible">True</property>
+                    <property name="use_underline">True</property>
+                    <property name="use_stock">True</property>
+                    <signal name="activate" handler="ease_about_dialog_show_about"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="position">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToolbar" id="Main Toolbar">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkMenuToolButton" id="Add Slide">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Add Slide</property>
+            <property name="use_underline">True</property>
+            <property name="stock_id">gtk-add</property>
+            <property name="menu">add-slide-menu</property>
+            <signal name="clicked" handler="ease_editor_window_new_slide_handler"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToolButton" id="Remove Slide">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Remove Slide</property>
+            <property name="use_underline">True</property>
+            <property name="stock_id">gtk-remove</property>
+            <signal name="clicked" handler="ease_editor_window_remove_slide"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparatorToolItem" id="toolbutton1">
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToolButton" id="Play">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Present</property>
+            <property name="use_underline">True</property>
+            <property name="stock_id">gtk-media-play</property>
+            <signal name="clicked" handler="ease_editor_window_play_handler"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparatorToolItem" id="toolbutton4">
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToolButton" id="Save2">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Save</property>
+            <property name="use_underline">True</property>
+            <property name="stock_id">gtk-save</property>
+            <signal name="clicked" handler="ease_editor_window_save_document"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparatorToolItem" id="toolbutton2">
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToolButton" id="Undo">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Undo</property>
+            <property name="use_underline">True</property>
+            <property name="stock_id">gtk-undo</property>
+            <signal name="clicked" handler="ease_editor_window_undo_handler"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToolButton" id="Redo">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Redo</property>
+            <property name="use_underline">True</property>
+            <property name="stock_id">gtk-redo</property>
+            <signal name="clicked" handler="ease_editor_window_redo_handler"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparatorToolItem" id="toolbutton3">
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleToolButton" id="Show Inspector">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Show Inspector</property>
+            <property name="use_underline">True</property>
+            <property name="stock_id">gtk-info</property>
+            <signal name="toggled" handler="ease_editor_window_inspector_clicked_handler"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparatorToolItem" id="Expand Separator">
+            <property name="visible">True</property>
+            <property name="draw">False</property>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToolItem" id="Zoom Slider Item">
+            <property name="visible">True</property>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkAlignment" id="main-align">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkHBox" id="editor">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkAlignment" id="Slides Align">
+                <property name="visible">True</property>
+                <property name="right_padding">4</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkAlignment" id="Embed Align">
+                <property name="visible">True</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkAlignment" id="Inspector Align">
+                <property name="visible">True</property>
+                <property name="left_padding">4</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="position">2</property>
+      </packing>
+    </child>
+  </object>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="yalign">0.49000000953674316</property>
+    <property name="stock">gtk-copy</property>
+  </object>
+  <object class="GtkAccelGroup" id="accel-group"/>
+  <object class="GtkMenu" id="add-slide-menu">
+    <property name="visible">True</property>
+  </object>
+</interface>

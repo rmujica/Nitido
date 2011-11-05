@@ -1,0 +1,82 @@
+# List of source files which contain translatable strings.
+[encoding: UTF-8]
+data/ease.desktop.in
+data/ease.desktop.in.in
+ease-core/ease-actor.vala
+ease-core/ease-animated-zoom-slider.vala
+ease-core/ease-archiver.vala
+ease-core/ease-background.vala
+ease-core/ease-background-widget.vala
+ease-core/ease-cairo-actor.vala
+ease-core/ease-cairo-element.vala
+ease-core/ease-color.vala
+ease-core/ease-dialog-progress.vala
+ease-core/ease-dialogs.vala
+ease-core/ease-document.vala
+ease-core/ease-element.vala
+ease-core/ease-enums.vala
+ease-core/ease-gradient.vala
+ease-core/ease-html-exporter.vala
+ease-core/ease-image-actor.vala
+ease-core/ease-image-element.vala
+ease-core/ease-image.vala
+ease-core/ease-iterable-models.vala
+ease-core/ease-media-element.vala
+ease-core/ease-pdf-actor.vala
+ease-core/ease-pdf-element.vala
+ease-core/ease-plugin-import-media.vala
+ease-core/ease-plugin-import-service.vala
+ease-core/ease-shape-element.vala
+ease-core/ease-slide.vala
+ease-core/ease-temp.vala
+ease-core/ease-text-actor.vala
+ease-core/ease-text-element.vala
+ease-core/ease-theme.vala
+ease-core/ease-transformations.vala
+ease-core/ease-transitions.vala
+ease-core/ease-undo-actions-element.vala
+ease-core/ease-undo-actions-slide.vala
+ease-core/ease-undo-action.vala
+ease-core/ease-undo-controller.vala
+ease-core/ease-undo-item.vala
+ease-core/ease-undo-source.vala
+ease-core/ease-utilities.vala
+ease-core/ease-video-actor.vala
+ease-core/ease-video-element.vala
+ease-core/ease-zoom-slider.vala
+ease/ease-about-dialog.vala
+ease/ease-close-confirm-dialog.vala
+ease/ease-editor-embed.vala
+ease/ease-editor-window.vala
+ease/ease-handle.vala
+ease/ease-import-dialog.vala
+ease/ease-import-flickr-media.vala
+ease/ease-import-flickr-service.vala
+ease/ease-import-oca-media.vala
+ease/ease-import-oca-service.vala
+ease/ease-import-widget.vala
+ease/ease-inspector-element-pane.vala
+ease/ease-inspector-pane.vala
+ease/ease-inspector-slide-pane.vala
+ease/ease-inspector-transition-pane.vala
+ease/ease-inspector.vala
+ease/ease-main.vala
+ease/ease-player.vala
+ease/ease-selection-rectangle.vala
+ease/ease-slide-actor.vala
+ease/ease-slide-button-panel.vala
+ease/ease-slide-sorter.vala
+ease/ease-welcome-actor.vala
+ease/ease-welcome-window.vala
+[type: gettext/glade]data/ui/background.ui
+[type: gettext/glade]data/ui/editor-window.ui
+[type: gettext/glade]data/ui/import-widget.ui
+[type: gettext/glade]data/ui/inspector-element-image.ui
+[type: gettext/glade]data/ui/inspector-element-none.ui
+[type: gettext/glade]data/ui/inspector-element-pdf.ui
+[type: gettext/glade]data/ui/inspector-element-shape.ui
+[type: gettext/glade]data/ui/inspector-element-text.ui
+[type: gettext/glade]data/ui/inspector-element-video.ui
+[type: gettext/glade]data/ui/inspector-slide.ui
+[type: gettext/glade]data/ui/progress-dialog.ui
+[type: gettext/glade]data/ui/welcome-window.ui

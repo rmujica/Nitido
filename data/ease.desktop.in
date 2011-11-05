@@ -1,0 +1,13 @@
+[Desktop Entry]
+_Name=Ease Presentation Editor
+_Comment=Create nice and elegant presentations
+Exec=ease
+Icon=ease
+Type=Application
+Categories=Office;
+Terminal=false
+StartupNotify=true
+MimeType=application/x-ease
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=ease
+X-GNOME-Bugzilla-Component=general

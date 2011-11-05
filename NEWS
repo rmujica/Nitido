@@ -1,0 +1,20 @@
+0.3.0
+=====
+	* New features :
+		* Video insertion
+		* Backgrounds and gradients
+		* Shapes
+		* Async saving
+		* UI enhancements (dialogs, progress bar)
+		* SlideSorter view
+		* Focus enhancements
+		* Splitted core functionnality into ease-core
+		* Foreach-enabled Clutter containers library (flutter)
+	* Translations update (credits might be wrong)
+		* de.po: Mario Blättermann <mariobl@gnome.org>
+		* es.po: Jorge González <jorgegonz@svn.gnome.org>
+		* fr.po: Stéphane Maniaci <stephane.maniaci@gmail.com>
+		* pt_BR.po: Rodrigo Flores <rlmflores@gnome.org>
+		* sl.po: Matej Urbančič <mateju@svn.gnome.org>
+		* sv.po: Daniel Nylander <po@danielnylander.se>
+	* Bugfixes

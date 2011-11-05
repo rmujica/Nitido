@@ -1,0 +1,867 @@
+# Russian translation for ease.
+# Copyright (C) 2010 glade3's COPYRIGHT HOLDER
+# This file is distributed under the same license as the ease package.
+#
+# Алекс <davian818@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ease master\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=ease&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-03-29 06:37+0000\n"
+"PO-Revision-Date: 2011-07-18 20:26+0300\n"
+"Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
+"Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n%10==1 && n%100!=11 ? 3 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../data/ease.desktop.in.h:1
+#: ../data/ease.desktop.in.in.h:1
+msgid "Create nice and elegant presentations"
+msgstr "Создание красивых и элегантных презентаций"
+
+#: ../data/ease.desktop.in.h:2
+#: ../data/ease.desktop.in.in.h:2
+msgid "Ease Presentation Editor"
+msgstr "Редактор презентаций Ease"
+
+#: ../ease-core/ease-archiver.vala:29
+#, c-format
+msgid "Saving \"%s\""
+msgstr "Сохранение «%s»"
+
+#: ../ease-core/ease-archiver.vala:98
+#, c-format
+msgid "Temporary directory doesn't exist: %s"
+msgstr "Временный каталог не существует: %s"
+
+#: ../ease-core/ease-background.vala:242
+msgid "Solid Color"
+msgstr "Сплошной цвет"
+
+#: ../ease-core/ease-background.vala:243
+msgid "Gradient"
+msgstr "Переход"
+
+#: ../ease-core/ease-background.vala:244
+msgid "Image"
+msgstr "Изображение"
+
+#: ../ease-core/ease-background-widget.vala:24
+msgid "Select Background Image"
+msgstr "Выбор изображения"
+
+#: ../ease-core/ease-background-widget.vala:188
+#: ../ease-core/ease-background-widget.vala:238
+#: ../ease/ease-editor-window.vala:459
+#: ../ease/ease-import-dialog.vala:33
+msgid "Images"
+msgstr "Изображения"
+
+#: ../ease-core/ease-background-widget.vala:193
+#: ../ease-core/ease-background-widget.vala:243
+#: ../ease-core/ease-dialogs.vala:192
+#: ../ease-core/ease-dialogs.vala:268
+#: ../ease/ease-editor-window.vala:464
+#: ../ease/ease-editor-window.vala:567
+msgid "All Files"
+msgstr "Все файлы"
+
+#: ../ease-core/ease-dialogs.vala:24
+msgid "The specified filename does not end with a \".ease\" extension. Would you like to append one?"
+msgstr "Указанное имя файла не оканчивается на «.ease». Следует ли добавить это расширение?"
+
+#: ../ease-core/ease-dialogs.vala:25
+msgid "Append .ease?"
+msgstr "Добавить .ease?"
+
+#: ../ease-core/ease-dialogs.vala:27
+#, c-format
+msgid "Replace %s?"
+msgstr "Заменить %s?"
+
+#: ../ease-core/ease-dialogs.vala:29
+#, c-format
+msgid "A file named %s already exists. Do you want to replace it?"
+msgstr "Файл с именем %s уже существует. Заменить?"
+
+#: ../ease-core/ease-dialogs.vala:31
+#, c-format
+msgid "This file already exists in the directory \"%s\". Overwriting it will replace its contents."
+msgstr "В этом каталоге уже есть файл «%s». После замены его содержимое будет утеряно."
+
+#: ../ease-core/ease-dialogs.vala:183
+msgid "Open Document"
+msgstr "Открытие документа"
+
+#: ../ease-core/ease-dialogs.vala:187
+#: ../ease-core/ease-dialogs.vala:263
+msgid "Ease Presentations"
+msgstr "Презентации Ease"
+
+#: ../ease-core/ease-dialogs.vala:290
+msgid "Don't append .ease"
+msgstr "Не добавлять .ease"
+
+#: ../ease-core/ease-dialogs.vala:294
+msgid "Append .ease"
+msgstr "Добавить .ease"
+
+#: ../ease-core/ease-dialogs.vala:327
+#, c-format
+msgid "Don't overwrite %s"
+msgstr "Не перезаписывать %s"
+
+#: ../ease-core/ease-dialogs.vala:331
+#, c-format
+msgid "Overwrite %s"
+msgstr "Перезаписать %s"
+
+#. *
+#. * Default slide title.
+#.
+#: ../ease-core/ease-document.vala:80
+#, c-format
+msgid "Slide %i"
+msgstr "Слайд %i"
+
+#. archive
+#: ../ease-core/ease-document.vala:278
+msgid "Saving Document"
+msgstr "Сохранение документа"
+
+#: ../ease-core/ease-document.vala:517
+msgid "Export as PDF"
+msgstr "Экспорт PDF"
+
+#: ../ease-core/ease-document.vala:527
+msgid "Error Exporting to PDF"
+msgstr "Не удалось экспортировать в PDF"
+
+#: ../ease-core/ease-document.vala:538
+msgid "Export as PostScript"
+msgstr "Экспорт в PostScript"
+
+#: ../ease-core/ease-document.vala:548
+msgid "Error Exporting to PostScript"
+msgstr "Не удалось экспортировать в PostScript"
+
+#: ../ease-core/ease-document.vala:595
+msgid "Error exporting as HTML"
+msgstr "Не удалось экспортировать в HTML"
+
+#: ../ease-core/ease-gradient.vala:259
+msgid "Linear"
+msgstr "Прямолинейный"
+
+#: ../ease-core/ease-gradient.vala:260
+msgid "Mirrored Linear"
+msgstr "Симметричный"
+
+#: ../ease-core/ease-gradient.vala:261
+msgid "Radial"
+msgstr "Концентрический"
+
+#: ../ease-core/ease-html-exporter.vala:75
+msgid "Export to HTML"
+msgstr "Экспорт в HTML"
+
+#: ../ease-core/ease-html-exporter.vala:82
+msgid "Exporting as HTML"
+msgstr "Экспорт в HTML"
+
+#: ../ease-core/ease-html-exporter.vala:144
+#: ../ease-core/ease-html-exporter.vala:176
+msgid "Error Copying File"
+msgstr "Не удалось скопировать файл"
+
+#: ../ease-core/ease-image-actor.vala:47
+#, c-format
+msgid "Error loading ImageActor: %s\n"
+msgstr "Не удалось загрузить ImageActor: %s\n"
+
+#: ../ease-core/ease-image-element.vala:86
+#: ../ease/ease-editor-window.vala:516
+msgid "Error Inserting Image"
+msgstr "Не удалось вставить изображение"
+
+#: ../ease-core/ease-image.vala:217
+msgid "Stretch"
+msgstr "Растянуть"
+
+#: ../ease-core/ease-image.vala:218
+msgid "Maintain Aspect Ratio"
+msgstr "Пропорционально"
+
+#: ../ease-core/ease-image.vala:219
+msgid "Do not Scale"
+msgstr "Не масштабировать"
+
+#: ../ease-core/ease-text-element.vala:25
+msgid "Double click to edit"
+msgstr "Дважды щёлкните для изменения"
+
+#: ../ease-core/ease-theme.vala:291
+#, c-format
+msgid "Error loading theme: %s"
+msgstr "Не удалось загрузить тему: %s"
+
+#: ../ease-core/ease-theme.vala:445
+#, c-format
+msgid "Invalid master slide title: %s"
+msgstr "Неверный заголовок слайда-шаблона: %s"
+
+#: ../ease-core/ease-theme.vala:472
+#, c-format
+msgid "Not a valid text element type: %s"
+msgstr "Неверный тип текстового элемента: %s"
+
+#: ../ease-core/ease-theme.vala:526
+#, c-format
+msgid "Could not find property %s on element type %s."
+msgstr "Не найдено свойство %s у типа элемента %s."
+
+#: ../ease-core/ease-theme.vala:556
+#, c-format
+msgid "Could not find property %s on master type %s."
+msgstr "Не найдено свойство %s у типа шаблона %s."
+
+#: ../ease-core/ease-theme.vala:584
+msgid "_Title slide"
+msgstr "Слайд-_заголовок"
+
+#: ../ease-core/ease-theme.vala:586
+msgid "Content slide _without header"
+msgstr "_Слайд без заголовка"
+
+#: ../ease-core/ease-theme.vala:588
+msgid "_Content slide"
+msgstr "Слайд с со_держимым"
+
+#: ../ease-core/ease-theme.vala:590
+msgid "Two column slide without _header"
+msgstr "_Две колонки с заголовком"
+
+#: ../ease-core/ease-theme.vala:592
+msgid "T_wo column slide with header"
+msgstr "Дв_е колонки и заголовок"
+
+#: ../ease-core/ease-theme.vala:594
+msgid "M_edia slide without header"
+msgstr "К_лип без заголовка"
+
+#: ../ease-core/ease-theme.vala:596
+msgid "_Media slide"
+msgstr "_Клип"
+
+#: ../ease-core/ease-theme.vala:598
+msgid "Em_pty Slide"
+msgstr "П_устой слайд"
+
+#: ../ease-core/ease-theme.vala:601
+#, c-format
+msgid "%s is not a valid identifier"
+msgstr "Недопустимый идентификатор: %s"
+
+#: ../ease-core/ease-transitions.vala:220
+msgid "None"
+msgstr "Нет"
+
+#: ../ease-core/ease-transitions.vala:222
+msgid "Fade"
+msgstr "Выцветание"
+
+#: ../ease-core/ease-transitions.vala:224
+msgid "Slide"
+msgstr "Сдвиг"
+
+#: ../ease-core/ease-transitions.vala:226
+msgid "Drop"
+msgstr "Падение"
+
+#: ../ease-core/ease-transitions.vala:228
+msgid "Pivot"
+msgstr "Поворот"
+
+#: ../ease-core/ease-transitions.vala:230
+msgid "Flip"
+msgstr "Переворот"
+
+#: ../ease-core/ease-transitions.vala:232
+msgid "Revolving Door"
+msgstr "Вращающаяся дверь"
+
+#: ../ease-core/ease-transitions.vala:234
+msgid "Reveal"
+msgstr "Проявление"
+
+#: ../ease-core/ease-transitions.vala:236
+msgid "Fall"
+msgstr "Падение вперед"
+
+#: ../ease-core/ease-transitions.vala:238
+msgid "Slats"
+msgstr "Рейки"
+
+#: ../ease-core/ease-transitions.vala:240
+msgid "Open Door"
+msgstr "Открывание"
+
+#: ../ease-core/ease-transitions.vala:242
+msgid "Explode"
+msgstr "Взрыв"
+
+#: ../ease-core/ease-transitions.vala:244
+msgid "Assemble"
+msgstr "Встраивание"
+
+#: ../ease-core/ease-transitions.vala:246
+msgid "Zoom"
+msgstr "Увеличение"
+
+#: ../ease-core/ease-transitions.vala:248
+msgid "Panel"
+msgstr "Панель"
+
+#: ../ease-core/ease-transitions.vala:250
+msgid "Intersperse Contents"
+msgstr "Рассеяние содержимого"
+
+#: ../ease-core/ease-transitions.vala:252
+msgid "Spin Contents"
+msgstr "Поворот"
+
+#: ../ease-core/ease-transitions.vala:254
+msgid "Spring Contents"
+msgstr "Прыжок"
+
+#: ../ease-core/ease-transitions.vala:256
+msgid "Swing Contents"
+msgstr "Переворот содержимого"
+
+#: ../ease-core/ease-transitions.vala:258
+msgid "Slide Contents"
+msgstr "Сдвиг содержимого"
+
+#: ../ease-core/ease-transitions.vala:260
+msgid "Zoom Contents"
+msgstr "Увеличение содержимого"
+
+#: ../ease-core/ease-transitions.vala:263
+#: ../ease-core/ease-transitions.vala:375
+msgid "Undefined"
+msgstr "Неприменимо"
+
+#: ../ease-core/ease-transitions.vala:340
+msgid "Up"
+msgstr "Вверх"
+
+#: ../ease-core/ease-transitions.vala:342
+msgid "Down"
+msgstr "Вниз"
+
+#: ../ease-core/ease-transitions.vala:344
+msgid "Left"
+msgstr "Влево"
+
+#: ../ease-core/ease-transitions.vala:346
+msgid "Right"
+msgstr "Вправо"
+
+#: ../ease-core/ease-transitions.vala:348
+msgid "Bottom"
+msgstr "Снизу"
+
+#: ../ease-core/ease-transitions.vala:350
+msgid "Top"
+msgstr "Сверху"
+
+#: ../ease-core/ease-transitions.vala:352
+msgid "Center"
+msgstr "Из центра"
+
+#: ../ease-core/ease-transitions.vala:354
+msgid "Top Left"
+msgstr "Слева сверху"
+
+#: ../ease-core/ease-transitions.vala:356
+msgid "Top Right"
+msgstr "Справа сверху"
+
+#: ../ease-core/ease-transitions.vala:358
+msgid "Bottom Left"
+msgstr "Слева снизу"
+
+#: ../ease-core/ease-transitions.vala:360
+msgid "Bottom Right"
+msgstr "Справа снизу"
+
+#: ../ease-core/ease-transitions.vala:362
+msgid "Top to Bottom"
+msgstr "Сверху вниз"
+
+#: ../ease-core/ease-transitions.vala:364
+msgid "Bottom to Top"
+msgstr "Снизу вверх"
+
+#: ../ease-core/ease-transitions.vala:366
+msgid "Left to Right"
+msgstr "Слева направо"
+
+#: ../ease-core/ease-transitions.vala:368
+msgid "Right to Left"
+msgstr "Справа налево"
+
+#: ../ease-core/ease-transitions.vala:370
+msgid "In"
+msgstr "Внутрь"
+
+#: ../ease-core/ease-transitions.vala:372
+msgid "Out"
+msgstr "Наружу"
+
+#: ../ease-core/ease-utilities.vala:274
+#, c-format
+msgid "Directory to remove doesn't exist: %s"
+msgstr "Не удалось удалить несуществующий каталог: %s"
+
+#: ../ease-core/ease-video-element.vala:93
+msgid "Your browser does not support the video tag"
+msgstr "Используемый вами браузер не поддерживает тэг video"
+
+#: ../ease-core/ease-video-element.vala:262
+msgid "Stop playback"
+msgstr "Остановить"
+
+#: ../ease-core/ease-video-element.vala:263
+msgid "Loop"
+msgstr "Цикл"
+
+#: ../ease-core/ease-video-element.vala:264
+msgid "Continue to next slide"
+msgstr "Следующий слайд"
+
+#: ../ease/ease-about-dialog.vala:50
+msgid "A presentation application for the GNOME Desktop"
+msgstr "Программа для презентаций для среды GNOME"
+
+#: ../ease/ease-about-dialog.vala:67
+msgid "Mario Blättermann <mariobl@gnome.org>"
+msgstr "Mario Blättermann <mariobl@gnome.org>"
+
+#: ../ease/ease-close-confirm-dialog.vala:58
+msgid "Save before closing?"
+msgstr "Сохранить перед закрытием?"
+
+#. buttons
+#: ../ease/ease-close-confirm-dialog.vala:98
+msgid "Close _without Saving"
+msgstr "Закрыть _без сохранения"
+
+#: ../ease/ease-close-confirm-dialog.vala:135
+#, c-format
+msgid "If you don't save, changes from the last second will be permanently lost."
+msgid_plural "If you don't save, changes from the last %i seconds will be permanently lost."
+msgstr[0] "Если не сохранить документ, то изменения, сделанные за последнюю секунду, будут утрачены."
+msgstr[1] "Если не сохранить документ, то изменения, сделанные за последние %i секунды, будут утрачены."
+msgstr[2] "Если не сохранить документ, то изменения, сделанные за последние %i секунд, будут утрачены."
+msgstr[3] "Если не сохранить документ, то изменения, сделанные за последнюю %i секунду, будут утрачены."
+
+#: ../ease/ease-close-confirm-dialog.vala:139
+msgid "If you don't save, changes from the last minute will be permanently lost."
+msgstr "Если не сохранить документ, то изменения, сделанные за последнюю минуту, будут утрачены."
+
+#: ../ease/ease-close-confirm-dialog.vala:143
+#, c-format
+msgid "If you don't save, changes from the last minute and %i second will be permanently lost."
+msgid_plural "If you don't save, changes from the last minute and %i seconds will be permanently lost."
+msgstr[0] "Если не сохранить документ, то изменения, сделанные за последнюю минуту и %i секунду, будут утрачены."
+msgstr[1] "Если не сохранить документ, то изменения, сделанные за последнюю минуту %i секунды, будут утрачены."
+msgstr[2] "Если не сохранить документ, то изменения, сделанные за последнюю минуту %i секунд, будут утрачены."
+msgstr[3] "Если не сохранить документ, то изменения, сделанные за последнюю минуту %i секунду, будут утрачены."
+
+#: ../ease/ease-close-confirm-dialog.vala:147
+#, c-format
+msgid "If you don't save, changes from the last %i minute will be permanently lost."
+msgid_plural "If you don't save, changes from the last %i minutes will be permanently lost."
+msgstr[0] "Если не сохранить документ, то изменения, сделанные за последнюю минуту, будут утрачены."
+msgstr[1] "Если не сохранить документ, то изменения, сделанные за последние %i минуты, будут утрачены."
+msgstr[2] "Если не сохранить документ, то изменения, сделанные за последние %i минут, будут утрачены."
+msgstr[3] "Если не сохранить документ, то изменения, сделанные за последнюю %i минуту, будут утрачены."
+
+#: ../ease/ease-close-confirm-dialog.vala:154
+msgid "If you don't save, changes from the last hour will be permanently lost."
+msgstr "Если не сохранить документ, то изменения, сделанные за последний час, будут утрачены."
+
+#: ../ease/ease-close-confirm-dialog.vala:156
+#, c-format
+msgid "If you don't save, changes from the last hour and %i minute will be permanently lost."
+msgid_plural "If you don't save, changes from the last hour and %i minutes will be permanently lost."
+msgstr[0] "Если не сохранить документ, то изменения, сделанные за последний час и %i минуту, будут утрачены."
+msgstr[1] "Если не сохранить документ, то изменения, сделанные за последний час и %i минуты, будут утрачены."
+msgstr[2] "Если не сохранить документ, то изменения, сделанные за последний час %i минут, будут утрачены."
+msgstr[3] "Если не сохранить документ, то изменения, сделанные за последний час %i минуту, будут утрачены."
+
+#: ../ease/ease-close-confirm-dialog.vala:160
+#, c-format
+msgid "If you don't save, changes from the last %i hour will be permanently lost."
+msgid_plural "If you don't save, changes from the last %i hours will be permanently lost."
+msgstr[0] "Если не сохранить документ, то изменения, сделанные за последний час, будут утрачены."
+msgstr[1] "Если не сохранить документ, то изменения, сделанные за %i последних часа, будут утрачены."
+msgstr[2] "Если не сохранить документ, то изменения, сделанные за %i последних часов, будут утрачены."
+msgstr[3] "Если не сохранить документ, то изменения, сделанные за %i последний час, будут утрачены."
+
+#: ../ease/ease-close-confirm-dialog.vala:171
+#, c-format
+msgid "Save changes to \"%s\" before closing?"
+msgstr "Сохранить «%s» перед закрытием?"
+
+#: ../ease/ease-editor-window.vala:168
+msgid "The quick brown fox jumps over the lazy dog"
+msgstr "Съешь же ещё этих мягких французских булок, да выпей чаю"
+
+#: ../ease/ease-editor-window.vala:266
+msgid "Untitled Document"
+msgstr "Безымянный"
+
+#: ../ease/ease-editor-window.vala:455
+msgid "Insert Image"
+msgstr "Вставка изображения"
+
+#: ../ease/ease-editor-window.vala:523
+msgid "Insert Video"
+msgstr "Вставка видеоклипа"
+
+#: ../ease/ease-editor-window.vala:548
+msgid "Error Inserting Video"
+msgstr "Не удалось вставить видеоклип"
+
+#: ../ease/ease-editor-window.vala:556
+msgid "Insert PDF Document"
+msgstr "Вставка документа PDF"
+
+#: ../ease/ease-editor-window.vala:562
+msgid "PDF Documents"
+msgstr "Документы PDF"
+
+#: ../ease/ease-editor-window.vala:601
+msgid "Error Inserting PDF"
+msgstr "Не удалось вставить документ PDF"
+
+#: ../ease/ease-editor-window.vala:722
+msgid "Save Document"
+msgstr "Сохранение документа"
+
+#: ../ease/ease-editor-window.vala:738
+msgid "Error Saving Document"
+msgstr "Не удалось сохранить документ"
+
+#. create the dialog
+#: ../ease/ease-editor-window.vala:817
+msgid "Select Color"
+msgstr "Выбор цвета"
+
+#. create a font selection dialog
+#: ../ease/ease-editor-window.vala:884
+msgid "Select Font"
+msgstr "Выбор шрифта"
+
+#: ../ease/ease-import-dialog.vala:20
+#, c-format
+msgid "Downloading image %i of %i"
+msgstr "Загрузка изображения %i из %i"
+
+#: ../ease/ease-import-dialog.vala:28
+msgid "Import Media"
+msgstr "Импорт клипов"
+
+#: ../ease/ease-import-dialog.vala:64
+msgid "Downloading Media Files"
+msgstr "Загрузка клипов"
+
+#. create checkboxes to filter CC licenses
+#: ../ease/ease-import-flickr-service.vala:80
+msgid "Share Alike"
+msgstr "ShareAlike"
+
+#: ../ease/ease-import-flickr-service.vala:82
+msgid "For Commercial Use"
+msgstr "Для коммерческого использования"
+
+#: ../ease/ease-inspector-transition-pane.vala:73
+msgid "Effect"
+msgstr "Эффект"
+
+#: ../ease/ease-inspector-transition-pane.vala:87
+msgid "Duration"
+msgstr "Длительность"
+
+#: ../ease/ease-inspector-transition-pane.vala:101
+msgid "Direction"
+msgstr "Направление"
+
+#: ../ease/ease-inspector-transition-pane.vala:117
+msgid "Start Transition"
+msgstr "Следующий слайд"
+
+#: ../ease/ease-inspector-transition-pane.vala:120
+msgid "Manually"
+msgstr "Вручную"
+
+#: ../ease/ease-inspector-transition-pane.vala:121
+msgid "Automatically"
+msgstr "Автоматически"
+
+#: ../ease/ease-inspector-transition-pane.vala:131
+msgid "Delay"
+msgstr "Задержка"
+
+#. parse command line options
+#: ../ease/ease-main.vala:65
+msgid " - a presentation editor"
+msgstr " — редактор презентаций"
+
+#: ../ease/ease-main.vala:80
+#, c-format
+msgid "error parsing options: %s\n"
+msgstr "ошибка разбора аргументов: %s\n"
+
+#: ../ease/ease-main.vala:217
+msgid "Error Opening Document"
+msgstr "Не удалось открыть документ"
+
+#: ../ease/ease-main.vala:246
+msgid "Error Playing Document"
+msgstr "Не удалось воспроизвести документ"
+
+#: ../ease/ease-main.vala:264
+msgid "Error creating new document"
+msgstr "Не удалось создать документ"
+
+#: ../ease/ease-player.vala:65
+msgid "Ease Presentation"
+msgstr "Презентация Ease"
+
+#: ../ease/ease-slide-button-panel.vala:195
+#, c-format
+msgid "Error drawing slide preview: %s"
+msgstr "Не удалось создать образец слайда: %s"
+
+#: ../ease/ease-welcome-actor.vala:163
+#, c-format
+msgid "Error rendering preview: %s"
+msgstr "Не удалось вывести образец слайда: %s"
+
+#: ../ease/ease-welcome-window.vala:90
+msgid "Pick a theme and start editing"
+msgstr "Выберите тему и начните редактирование"
+
+#: ../ease/ease-welcome-window.vala:121
+msgid "Custom"
+msgstr "Другое"
+
+#: ../ease/ease-welcome-window.vala:123
+#, c-format
+msgid "%i by %i"
+msgstr "%i на %i"
+
+#: ../data/ui/background.ui.h:1
+msgid "Background Color"
+msgstr "Фоновый цвет"
+
+#: ../data/ui/background.ui.h:2
+msgid "Background Gradient"
+msgstr "Переход цветов фона"
+
+#: ../data/ui/background.ui.h:3
+msgid "Background Image"
+msgstr "Фоновое изображение"
+
+#: ../data/ui/background.ui.h:4
+msgid "Background Style"
+msgstr "Оформление фона"
+
+#: ../data/ui/background.ui.h:5
+msgid "Fill Mode"
+msgstr "Заполнение"
+
+#: ../data/ui/background.ui.h:6
+msgid "Gradient Angle"
+msgstr "Направление перехода"
+
+#: ../data/ui/background.ui.h:7
+msgid "Reverse Gradient"
+msgstr "Поменять цвета"
+
+#: ../data/ui/editor-window.ui.h:1
+msgid "Add Slide"
+msgstr "Добавить слайд"
+
+#: ../data/ui/editor-window.ui.h:2
+msgid "Editor"
+msgstr "Редактор"
+
+#: ../data/ui/editor-window.ui.h:3
+msgid "Lower to _Bottom"
+msgstr "Оп_устить вниз"
+
+#: ../data/ui/editor-window.ui.h:4
+msgid "Media from the _Web"
+msgstr "Клип из И_нтернета"
+
+#: ../data/ui/editor-window.ui.h:5
+msgid "Post_Script"
+msgstr "Ф_айл PostScript"
+
+#: ../data/ui/editor-window.ui.h:6
+msgid "Present"
+msgstr "Начать показ"
+
+#: ../data/ui/editor-window.ui.h:7
+msgid "Raise to _Top"
+msgstr "Нав_ерх"
+
+#: ../data/ui/editor-window.ui.h:8
+msgid "Redo"
+msgstr "Повторить"
+
+#: ../data/ui/editor-window.ui.h:9
+msgid "Remove Slide"
+msgstr "Удалить слайд"
+
+#: ../data/ui/editor-window.ui.h:10
+msgid "Save"
+msgstr "Сохранить"
+
+#: ../data/ui/editor-window.ui.h:11
+msgid "Save a _Copy"
+msgstr "Сох_ранить копию"
+
+#: ../data/ui/editor-window.ui.h:12
+msgid "Show Inspector"
+msgstr "Панель свойств"
+
+#: ../data/ui/editor-window.ui.h:13
+msgid "Slide Sorter"
+msgstr "Сортировка слайдов"
+
+#: ../data/ui/editor-window.ui.h:14
+msgid "Undo"
+msgstr "Отменить"
+
+#: ../data/ui/editor-window.ui.h:15
+msgid "Zoom to _Fit"
+msgstr "Слайд _целиком"
+
+#: ../data/ui/editor-window.ui.h:16
+msgid "_Edit"
+msgstr "_Правка"
+
+#: ../data/ui/editor-window.ui.h:17
+msgid "_Export Presentation"
+msgstr "_Экспорт презентации"
+
+#: ../data/ui/editor-window.ui.h:18
+msgid "_File"
+msgstr "_Файл"
+
+#: ../data/ui/editor-window.ui.h:19
+msgid "_HTML"
+msgstr "_Файл HTML"
+
+#: ../data/ui/editor-window.ui.h:20
+msgid "_Help"
+msgstr "Спр_авка"
+
+#: ../data/ui/editor-window.ui.h:21
+msgid "_Image"
+msgstr "_Изображение"
+
+#: ../data/ui/editor-window.ui.h:22
+#: ../data/ui/import-widget.ui.h:2
+msgid "_Insert"
+msgstr "_Вставка"
+
+#: ../data/ui/editor-window.ui.h:23
+msgid "_Lower"
+msgstr "_Ниже"
+
+#: ../data/ui/editor-window.ui.h:24
+#: ../data/ui/inspector-element-shape.ui.h:1
+msgid "_Oval"
+msgstr "_Эллипс"
+
+#: ../data/ui/editor-window.ui.h:25
+msgid "_PDF"
+msgstr "_Документ PDF"
+
+#: ../data/ui/editor-window.ui.h:26
+msgid "_PDF Document"
+msgstr "_Документ PDF"
+
+#: ../data/ui/editor-window.ui.h:27
+msgid "_Raise"
+msgstr "Вы_ше"
+
+#: ../data/ui/editor-window.ui.h:28
+#: ../data/ui/inspector-element-shape.ui.h:2
+msgid "_Rectangle"
+msgstr "_Прямоугольник"
+
+#: ../data/ui/editor-window.ui.h:29
+msgid "_Text"
+msgstr "_Текст"
+
+#: ../data/ui/editor-window.ui.h:30
+msgid "_Video"
+msgstr "_Видеоклип"
+
+#: ../data/ui/editor-window.ui.h:31
+msgid "_View"
+msgstr "_Вид"
+
+#: ../data/ui/import-widget.ui.h:1
+msgid "No Results Found"
+msgstr "Нет результатов"
+
+#: ../data/ui/inspector-element-image.ui.h:1
+msgid "Select Image"
+msgstr "Выбор изображения"
+
+#: ../data/ui/inspector-element-none.ui.h:1
+msgid "Nothing is selected"
+msgstr "Нет выделения"
+
+#: ../data/ui/inspector-element-pdf.ui.h:1
+msgid "Allow page change"
+msgstr "Разрешить смену страниц"
+
+#: ../data/ui/inspector-element-pdf.ui.h:2
+msgid "Displayed Page"
+msgstr "Видимая страница"
+
+#: ../data/ui/inspector-element-video.ui.h:1
+msgid "When video playback ends:"
+msgstr "После воспроизведения:"
+
+#: ../data/ui/inspector-element-video.ui.h:2
+msgid "_Automatically start playback"
+msgstr "_Начать воспроизведение"
+
+#: ../data/ui/inspector-element-video.ui.h:3
+msgid "_Fill Slide"
+msgstr "_Заполнить слайд"
+
+#: ../data/ui/inspector-element-video.ui.h:4
+msgid "_Mute Audio"
+msgstr "Без _звука"
+
+#: ../data/ui/welcome-window.ui.h:1
+msgid "_New presentation"
+msgstr "Со_здать"

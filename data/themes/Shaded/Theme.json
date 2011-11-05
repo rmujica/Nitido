@@ -1,0 +1,22 @@
+{
+	"title" : "Shaded",
+	"author" : "Nate Stedman <natesm@gmail.com>",
+	
+	"master-defaults" : {
+		"background-type" : "background-type-gradient",
+		"background-gradient" : "0.2, 0.2, 0.24 | 0.06, 0.075, 0.1 | linear | 3.14"
+	},
+	
+	"element-defaults" : {
+		"text-color" : "1, 1, 1",
+		"text-weight" : "300",
+		"text-font" : "DejaVu Sans"
+	},
+	
+	"elements" : {
+		"title-text" : {
+			"height" : "90",
+			"text-size" : "64"
+		}
+	}
+}

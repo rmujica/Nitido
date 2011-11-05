@@ -1,0 +1,658 @@
+# Swedish translation for ease.
+# Copyright (C) 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the ease package.
+# Daniel Nylander <po@danielnylander.se>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ease\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-11-21 21:14+0100\n"
+"PO-Revision-Date: 2010-12-31 12:36+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/ease.desktop.in.h:1
+#: ../data/ease.desktop.in.in.h:1
+msgid "Create nice and elegant presentations"
+msgstr "Skapa vackra och eleganta presentationer"
+
+#: ../data/ease.desktop.in.h:2
+#: ../data/ease.desktop.in.in.h:2
+msgid "Ease Presentation Editor"
+msgstr "Presentationsredigeraren Ease"
+
+#: ../ease-core/ease-archiver.vala:29
+#, c-format
+msgid "Saving \"%s\""
+msgstr "Sparar \"%s\""
+
+#: ../ease-core/ease-archiver.vala:98
+#, c-format
+msgid "Temporary directory doesn't exist: %s"
+msgstr "Temporärkatalogen finns inte: %s"
+
+#: ../ease-core/ease-background.vala:241
+msgid "Solid Color"
+msgstr "Enfärgad"
+
+#: ../ease-core/ease-background.vala:242
+msgid "Gradient"
+msgstr "Gradient"
+
+#: ../ease-core/ease-background.vala:243
+msgid "Image"
+msgstr "Bild"
+
+#: ../ease-core/ease-background-widget.vala:24
+msgid "Select Background Image"
+msgstr "Välj bakgrundsbild"
+
+#: ../ease-core/ease-background-widget.vala:188
+#: ../ease-core/ease-background-widget.vala:238
+#: ../ease/ease-editor-window.vala:459
+#: ../ease/ease-import-dialog.vala:33
+msgid "Images"
+msgstr "Bilder"
+
+#: ../ease-core/ease-background-widget.vala:193
+#: ../ease-core/ease-background-widget.vala:243
+#: ../ease-core/ease-dialogs.vala:192
+#: ../ease-core/ease-dialogs.vala:268
+#: ../ease/ease-editor-window.vala:464
+#: ../ease/ease-editor-window.vala:567
+msgid "All Files"
+msgstr "Alla filer"
+
+#: ../ease-core/ease-dialogs.vala:24
+msgid "The specified filename does not end with a \".ease\" extension. Would you like to append one?"
+msgstr "Det angivna filnamnet har inte en filändelse som slutar med \".ease\". Vill du lägga till den?"
+
+#: ../ease-core/ease-dialogs.vala:25
+msgid "Append .ease?"
+msgstr "Lägg till .ease?"
+
+#: ../ease-core/ease-dialogs.vala:27
+#, c-format
+msgid "Replace %s?"
+msgstr "Ersätt %s?"
+
+#: ../ease-core/ease-dialogs.vala:29
+#, c-format
+msgid "A file named %s already exists. Do you want to replace it?"
+msgstr "En fil med namnet %s finns redan. Vill du ersätta den?"
+
+#: ../ease-core/ease-dialogs.vala:31
+#, c-format
+msgid "This file already exists in the directory \"%s\". Overwriting it will replace its contents."
+msgstr "Denna fil finns redan i katalogen \"%s\". Överskrivning innebär att dess innehåll ersätts."
+
+#: ../ease-core/ease-dialogs.vala:183
+msgid "Open Document"
+msgstr "Öppna dokument"
+
+#: ../ease-core/ease-dialogs.vala:187
+#: ../ease-core/ease-dialogs.vala:263
+msgid "Ease Presentations"
+msgstr "Ease-presentationer"
+
+#: ../ease-core/ease-dialogs.vala:290
+msgid "Don't append .ease"
+msgstr "Lägg inte till .ease"
+
+#: ../ease-core/ease-dialogs.vala:294
+msgid "Append .ease"
+msgstr "Lägg till .ease"
+
+#: ../ease-core/ease-dialogs.vala:327
+#, c-format
+msgid "Don't overwrite %s"
+msgstr "Skriv inte över %s"
+
+#: ../ease-core/ease-dialogs.vala:331
+#, c-format
+msgid "Overwrite %s"
+msgstr "Skriv över %s"
+
+#. *
+#. * Default slide title.
+#.
+#: ../ease-core/ease-document.vala:80
+#, c-format
+msgid "Slide %i"
+msgstr ""
+
+#. archive
+#: ../ease-core/ease-document.vala:278
+msgid "Saving Document"
+msgstr "Sparar dokument"
+
+#: ../ease-core/ease-document.vala:517
+msgid "Export as PDF"
+msgstr "Exportera som PDF"
+
+#: ../ease-core/ease-document.vala:527
+msgid "Error Exporting to PDF"
+msgstr ""
+
+#: ../ease-core/ease-document.vala:538
+msgid "Export as PostScript"
+msgstr "Exportera som PostScript"
+
+#: ../ease-core/ease-document.vala:548
+msgid "Error Exporting to PostScript"
+msgstr ""
+
+#: ../ease-core/ease-document.vala:595
+msgid "Error exporting as HTML"
+msgstr ""
+
+#: ../ease-core/ease-gradient.vala:259
+msgid "Linear"
+msgstr "Linjär"
+
+#: ../ease-core/ease-gradient.vala:260
+msgid "Mirrored Linear"
+msgstr ""
+
+#: ../ease-core/ease-gradient.vala:261
+msgid "Radial"
+msgstr ""
+
+#: ../ease-core/ease-html-exporter.vala:75
+msgid "Export to HTML"
+msgstr "Exportera till HTML"
+
+#: ../ease-core/ease-html-exporter.vala:82
+msgid "Exporting as HTML"
+msgstr "Exporterar som HTML"
+
+#: ../ease-core/ease-html-exporter.vala:144
+#: ../ease-core/ease-html-exporter.vala:176
+msgid "Error Copying File"
+msgstr ""
+
+#: ../ease-core/ease-image-actor.vala:47
+#, c-format
+msgid "Error loading ImageActor: %s\n"
+msgstr ""
+
+#: ../ease-core/ease-image-element.vala:99
+#: ../ease/ease-editor-window.vala:516
+msgid "Error Inserting Image"
+msgstr ""
+
+#: ../ease-core/ease-image.vala:146
+msgid "Stretch"
+msgstr ""
+
+#: ../ease-core/ease-image.vala:147
+msgid "Maintain Aspect Ratio"
+msgstr ""
+
+#: ../ease-core/ease-image.vala:148
+msgid "Do not Scale"
+msgstr "Skala inte"
+
+#: ../ease-core/ease-text-element.vala:25
+msgid "Double click to edit"
+msgstr "Dubbelklicka för att redigera"
+
+#: ../ease-core/ease-theme.vala:291
+#, c-format
+msgid "Error loading theme: %s"
+msgstr ""
+
+#: ../ease-core/ease-theme.vala:445
+#, c-format
+msgid "Invalid master slide title: %s"
+msgstr ""
+
+#: ../ease-core/ease-theme.vala:472
+#, c-format
+msgid "Not a valid text element type: %s"
+msgstr ""
+
+#: ../ease-core/ease-theme.vala:526
+#, c-format
+msgid "Could not find property %s on element type %s."
+msgstr ""
+
+#: ../ease-core/ease-theme.vala:556
+#, c-format
+msgid "Could not find property %s on master type %s."
+msgstr ""
+
+#: ../ease-core/ease-theme.vala:584
+msgid "_Title slide"
+msgstr ""
+
+#: ../ease-core/ease-theme.vala:586
+msgid "Content slide _without header"
+msgstr ""
+
+#: ../ease-core/ease-theme.vala:588
+msgid "_Content slide"
+msgstr ""
+
+#: ../ease-core/ease-theme.vala:590
+msgid "Two column slide without _header"
+msgstr ""
+
+#: ../ease-core/ease-theme.vala:592
+msgid "T_wo column slide with header"
+msgstr ""
+
+#: ../ease-core/ease-theme.vala:594
+msgid "M_edia slide without header"
+msgstr ""
+
+#: ../ease-core/ease-theme.vala:596
+msgid "_Media slide"
+msgstr ""
+
+#: ../ease-core/ease-theme.vala:598
+msgid "Em_pty Slide"
+msgstr ""
+
+#: ../ease-core/ease-theme.vala:601
+#, c-format
+msgid "%s is not a valid identifier"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:220
+msgid "None"
+msgstr "Ingen"
+
+#: ../ease-core/ease-transitions.vala:222
+msgid "Fade"
+msgstr "Tona"
+
+#: ../ease-core/ease-transitions.vala:224
+msgid "Slide"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:226
+msgid "Drop"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:228
+msgid "Pivot"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:230
+msgid "Flip"
+msgstr "Vänd"
+
+#: ../ease-core/ease-transitions.vala:232
+msgid "Revolving Door"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:234
+msgid "Reveal"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:236
+msgid "Fall"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:238
+msgid "Slats"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:240
+msgid "Open Door"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:242
+msgid "Explode"
+msgstr "Explodera"
+
+#: ../ease-core/ease-transitions.vala:244
+msgid "Assemble"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:246
+msgid "Zoom"
+msgstr "Zooma"
+
+#: ../ease-core/ease-transitions.vala:248
+msgid "Panel"
+msgstr "Panel"
+
+#: ../ease-core/ease-transitions.vala:250
+msgid "Intersperse Contents"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:252
+msgid "Spin Contents"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:254
+msgid "Spring Contents"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:256
+msgid "Swing Contents"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:258
+msgid "Slide Contents"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:260
+msgid "Zoom Contents"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:263
+#: ../ease-core/ease-transitions.vala:375
+msgid "Undefined"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:340
+msgid "Up"
+msgstr "Uppåt"
+
+#: ../ease-core/ease-transitions.vala:342
+msgid "Down"
+msgstr "Nedåt"
+
+#: ../ease-core/ease-transitions.vala:344
+msgid "Left"
+msgstr "Vänster"
+
+#: ../ease-core/ease-transitions.vala:346
+msgid "Right"
+msgstr "Höger"
+
+#: ../ease-core/ease-transitions.vala:348
+msgid "Bottom"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:350
+msgid "Top"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:352
+msgid "Center"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:354
+msgid "Top Left"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:356
+msgid "Top Right"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:358
+msgid "Bottom Left"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:360
+msgid "Bottom Right"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:362
+msgid "Top to Bottom"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:364
+msgid "Bottom to Top"
+msgstr ""
+
+#: ../ease-core/ease-transitions.vala:366
+msgid "Left to Right"
+msgstr "Vänster till höger"
+
+#: ../ease-core/ease-transitions.vala:368
+msgid "Right to Left"
+msgstr "Höger till vänster"
+
+#: ../ease-core/ease-transitions.vala:370
+msgid "In"
+msgstr "In"
+
+#: ../ease-core/ease-transitions.vala:372
+msgid "Out"
+msgstr "Ut"
+
+#: ../ease-core/ease-utilities.vala:274
+#, c-format
+msgid "Directory to remove doesn't exist: %s"
+msgstr ""
+
+#: ../ease-core/ease-video-element.vala:93
+msgid "Your browser does not support the video tag"
+msgstr ""
+
+#: ../ease-core/ease-video-element.vala:261
+msgid "Stop playback"
+msgstr "Stoppa uppspelning"
+
+#: ../ease-core/ease-video-element.vala:262
+msgid "Loop"
+msgstr ""
+
+#: ../ease-core/ease-video-element.vala:263
+msgid "Continue to next slide"
+msgstr ""
+
+#: ../ease/ease-about-dialog.vala:50
+msgid "A presentation application for the GNOME Desktop"
+msgstr "Ett presentationsprogram för GNOME-skrivbordet"
+
+#: ../ease/ease-about-dialog.vala:67
+msgid "Mario Blättermann <mariobl@gnome.org>"
+msgstr "Mario Blättermann <mariobl@gnome.org>"
+
+#: ../ease/ease-close-confirm-dialog.vala:58
+msgid "Save before closing?"
+msgstr "Spara innan stängning?"
+
+#. buttons
+#: ../ease/ease-close-confirm-dialog.vala:98
+msgid "Close _without Saving"
+msgstr "Stäng _utan att spara"
+
+#: ../ease/ease-close-confirm-dialog.vala:135
+#, c-format
+msgid "If you don't save, changes from the last second will be permanently lost."
+msgid_plural "If you don't save, changes from the last %i seconds will be permanently lost."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../ease/ease-close-confirm-dialog.vala:139
+msgid "If you don't save, changes from the last minute will be permanently lost."
+msgstr ""
+
+#: ../ease/ease-close-confirm-dialog.vala:143
+#, c-format
+msgid "If you don't save, changes from the last minute and %i second will be permanently lost."
+msgid_plural "If you don't save, changes from the last minute and %i seconds will be permanently lost."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../ease/ease-close-confirm-dialog.vala:147
+#, c-format
+msgid "If you don't save, changes from the last %i minute will be permanently lost."
+msgid_plural "If you don't save, changes from the last %i minutes will be permanently lost."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../ease/ease-close-confirm-dialog.vala:154
+msgid "If you don't save, changes from the last hour will be permanently lost."
+msgstr ""
+
+#: ../ease/ease-close-confirm-dialog.vala:156
+#, c-format
+msgid "If you don't save, changes from the last hour and %i minute will be permanently lost."
+msgid_plural "If you don't save, changes from the last hour and %i minutes will be permanently lost."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../ease/ease-close-confirm-dialog.vala:160
+#, c-format
+msgid "If you don't save, changes from the last %i hour will be permanently lost."
+msgid_plural "If you don't save, changes from the last %i hours will be permanently lost."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../ease/ease-close-confirm-dialog.vala:171
+#, c-format
+msgid "Save changes to \"%s\" before closing?"
+msgstr "Spara ändringar i \"%s\" innan stängning?"
+
+#: ../ease/ease-editor-window.vala:168
+msgid "The quick brown fox jumps over the lazy dog"
+msgstr "Flygande bäckasiner söka hwila på mjuka tuvor"
+
+#: ../ease/ease-editor-window.vala:266
+msgid "Untitled Document"
+msgstr "Namnlöst dokument"
+
+#: ../ease/ease-editor-window.vala:455
+msgid "Insert Image"
+msgstr "Infoga video"
+
+#: ../ease/ease-editor-window.vala:523
+msgid "Insert Video"
+msgstr "Infoga video"
+
+#: ../ease/ease-editor-window.vala:548
+msgid "Error Inserting Video"
+msgstr ""
+
+#: ../ease/ease-editor-window.vala:556
+msgid "Insert PDF Document"
+msgstr "Infoga PDF-dokument"
+
+#: ../ease/ease-editor-window.vala:562
+msgid "PDF Documents"
+msgstr "PDF-dokument"
+
+#: ../ease/ease-editor-window.vala:601
+msgid "Error Inserting PDF"
+msgstr ""
+
+#: ../ease/ease-editor-window.vala:725
+msgid "Save Document"
+msgstr "Spara dokument"
+
+#: ../ease/ease-editor-window.vala:741
+msgid "Error Saving Document"
+msgstr ""
+
+#. create the dialog
+#: ../ease/ease-editor-window.vala:820
+msgid "Select Color"
+msgstr "Välj färg"
+
+#. create a font selection dialog
+#: ../ease/ease-editor-window.vala:887
+msgid "Select Font"
+msgstr "Välj typsnitt"
+
+#: ../ease/ease-import-dialog.vala:20
+#, c-format
+msgid "Downloading image %i of %i"
+msgstr "Hämtar bild %i av %i"
+
+#: ../ease/ease-import-dialog.vala:28
+msgid "Import Media"
+msgstr "Importera media"
+
+#: ../ease/ease-import-dialog.vala:64
+msgid "Downloading Media Files"
+msgstr ""
+
+#. create checkboxes to filter CC licenses
+#: ../ease/ease-import-flickr-service.vala:80
+msgid "Share Alike"
+msgstr ""
+
+#: ../ease/ease-import-flickr-service.vala:82
+msgid "For Commercial Use"
+msgstr ""
+
+#: ../ease/ease-inspector-transition-pane.vala:73
+msgid "Effect"
+msgstr "Effekt"
+
+#: ../ease/ease-inspector-transition-pane.vala:87
+msgid "Duration"
+msgstr "Längd"
+
+#: ../ease/ease-inspector-transition-pane.vala:101
+msgid "Direction"
+msgstr "Riktning"
+
+#: ../ease/ease-inspector-transition-pane.vala:117
+msgid "Start Transition"
+msgstr "Starta övergång"
+
+#: ../ease/ease-inspector-transition-pane.vala:120
+msgid "Manually"
+msgstr "Manuellt"
+
+#: ../ease/ease-inspector-transition-pane.vala:121
+msgid "Automatically"
+msgstr "Automatiskt"
+
+#: ../ease/ease-inspector-transition-pane.vala:131
+msgid "Delay"
+msgstr "Fördröjning"
+
+#. parse command line options
+#: ../ease/ease-main.vala:65
+msgid " - a presentation editor"
+msgstr "- en presentationsredigerare"
+
+#: ../ease/ease-main.vala:80
+#, c-format
+msgid "error parsing options: %s\n"
+msgstr ""
+
+#: ../ease/ease-main.vala:217
+msgid "Error Opening Document"
+msgstr ""
+
+#: ../ease/ease-main.vala:246
+msgid "Error Playing Document"
+msgstr ""
+
+#: ../ease/ease-main.vala:264
+msgid "Error creating new document"
+msgstr ""
+
+#: ../ease/ease-player.vala:65
+msgid "Ease Presentation"
+msgstr "Ease-presentation"
+
+#: ../ease/ease-slide-button-panel.vala:195
+#, c-format
+msgid "Error drawing slide preview: %s"
+msgstr ""
+
+#: ../ease/ease-welcome-actor.vala:163
+#, c-format
+msgid "Error rendering preview: %s"
+msgstr ""
+
+#: ../ease/ease-welcome-window.vala:90
+msgid "Pick a theme and start editing"
+msgstr "Välj ett tema och börja redigera"
+
+#: ../ease/ease-welcome-window.vala:121
+msgid "Custom"
+msgstr "Anpassad"
+
+#: ../ease/ease-welcome-window.vala:123
+#, c-format
+msgid "%i by %i"
+msgstr ""
+
