@@ -1,0 +1,14 @@
+Compiling Nitido
+================
+
+I'm currently using Fedora 16, and this are the packages I'm using to
+compile Nitido (all come from default repos):
+
+- vala
+- gcc
+
+- clutter-gst-devel
+- clutter-gtk010-devel
+- libgee-devel
+- libarchive-devel
+- poppler-glib-devel
