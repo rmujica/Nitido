@@ -36,19 +36,17 @@ public class Ease.CairoActor : Actor
 		e.changed.connect(draw);
 		
 		draw();
-		
-		// draw at full resolution again once redraw is complete
-		notify["resizing"].connect(() => { if (!resizing) draw(); });
 	}
 	
 	internal void draw()
 	{
+		//debug("drawing");
 		tex.set_surface_size((uint)element.width, (uint)element.height);
 		tex.clear();
 		var cr = tex.create();
 		try
 		{
-			element.cairo_render(cr, resizing);
+			element.cairo_render(cr);
 		}
 		catch (Error e)
 		{

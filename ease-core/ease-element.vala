@@ -182,15 +182,27 @@ public abstract class Ease.Element : GLib.Object, UndoSource
 	 * Renders this Element to a CairoContext.
 	 *
 	 * @param context The context to render to.
-	 * @param use_small Especially when dragging Elements around, thumbnails
-	 * can be rapidly redrawn. If an Element subclass uses any potentially large
-	 * media files, it is a good idea to cache a low resolution version of the
-	 * file, and draw with that. For example {@link Image} provides this
-	 * ability automatically, and it is used in {@link Background} (not actually
-	 * an Element subclass) and {@link ImageElement}.
 	 */
-	public abstract void cairo_render(Cairo.Context context,
-	                                  bool use_small) throws Error;
+	public abstract void cairo_render(Cairo.Context context) throws Error;
+	
+	/**
+	 * Renders this Element to a thumbnail-sized CairoContext. The ability to
+	 * override this method in subclasses allows for optimizations to be
+	 * performed, preventing slowdown.
+	 *
+	 * Especially when dragging Elements around, thumbnails are rapidly redrawn.
+	 * If an Element subclass uses any potentially large media files, it is a
+	 * good idea to override this method, cache a low resolution version of the
+	 * file, and draw with that.
+	 *
+	 * If not overriden, this method will simply call {@link cairo_render}.
+	 *
+	 * @param context The context to render to.
+	 */
+	public virtual void cairo_render_small(Cairo.Context context) throws Error
+	{
+		cairo_render(context);
+	}
 	
 	/**
 	 * Instructs subclasses to free any cached data for Cairo rendering.

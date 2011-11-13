@@ -35,10 +35,6 @@ vapi_DATA = \
 	$(top_srcdir)/vapi/flutter-@FLUTTER_VERSION@.vapi \
 	$(top_srcdir)/vapi/flutter-@FLUTTER_VERSION@.deps
 
-$(top_srcdir)/vapi/flutter-@FLUTTER_VERSION@.vapi: libflutter-@FLUTTER_VERSION@.la
-
-flutter.h: libflutter-@FLUTTER_VERSION@.la
-
 # remove generated files on `make clean`
 CLEANFILES = \
 	flutter.c \

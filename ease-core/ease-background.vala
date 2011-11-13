@@ -146,8 +146,7 @@ public class Ease.Background : GLib.Object
 	 * @param height The height of the rendering.
 	 * @param path The base path to any possible media files.
 	 */
-	public void set_cairo(Cairo.Context cr, int width, int height, string path,
-	                      bool use_small)
+	public void set_cairo(Cairo.Context cr, int width, int height, string path)
 	{
 		switch (background_type)
 		{
@@ -158,7 +157,7 @@ public class Ease.Background : GLib.Object
 				gradient.set_cairo(cr, width, height);
 				break;
 			case BackgroundType.IMAGE:
-				image.set_cairo(cr, width, height, path, use_small);
+				image.set_cairo(cr, width, height, path);
 				break;
 		}
 	}
@@ -172,10 +171,10 @@ public class Ease.Background : GLib.Object
 	 * @param path The base path to any possible media files.
 	 */
 	public void cairo_render(Cairo.Context cr, int width, int height,
-	                         string path, bool use_small) throws GLib.Error
+	                         string path) throws GLib.Error
 	{
 		cr.save();
-		set_cairo(cr, width, height, path, use_small);
+		set_cairo(cr, width, height, path);
 		cr.rectangle(0, 0, width, height);
 		cr.fill();
 		cr.restore();

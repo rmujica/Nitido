@@ -156,7 +156,7 @@ internal class Ease.WelcomeActor : Clutter.Group
 		try
 		{
 			var slide = create_slide(w, h);
-			slide.cairo_render_sized(slide_actor.create(), w, h, false);
+			slide.cairo_render_sized(slide_actor.create(), w, h);
 		}
 		catch (GLib.Error e)
 		{

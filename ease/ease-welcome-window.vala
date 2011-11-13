@@ -37,7 +37,7 @@ internal class Ease.WelcomeWindow : Gtk.Window
 	private Theme selected_theme;
 
 	// clutter view
-	private ScrolledEmbedWindow scrolled;
+	private ScrollableEmbed embed;
 
 	// previews
 	private Clutter.Group preview_container;
@@ -176,9 +176,8 @@ internal class Ease.WelcomeWindow : Gtk.Window
 		
 		// create the upper UI - the embed
 		// FIXME (or don't) : the next line throws a vblank_mode warning for me
-		scrolled = new ScrolledEmbedWindow(null);
-		scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
-		(scrolled.embed.get_stage() as Clutter.Stage).use_fog = false;
+		embed = new ScrollableEmbed(false, false);
+		embed.get_stage().use_fog = false;
 
 		// create the preview container
 		preview_container = new Clutter.Group();
@@ -227,10 +226,10 @@ internal class Ease.WelcomeWindow : Gtk.Window
 			});
 		}
 
-		scrolled.embed.viewport.add_actor(preview_container);
-		scrolled.embed.viewport.show_all();
-		vbox.pack_start (scrolled, true, true, 0);
-		vbox.reorder_child (scrolled, 0);
+		embed.contents.add_actor (preview_container);
+		embed.contents.show_all ();
+		vbox.pack_start (embed, true, true, 0);
+		vbox.reorder_child (embed, 0);
 
 		builder.connect_signals (this);
 		this.add (vbox);
@@ -238,7 +237,7 @@ internal class Ease.WelcomeWindow : Gtk.Window
 
 
 		// reflow the stage
-		scrolled.size_allocate.connect ( () =>
+		embed.size_allocate.connect ( () =>
 			{
 				reflow_previews ();
 			});
@@ -297,7 +296,7 @@ internal class Ease.WelcomeWindow : Gtk.Window
 		// calculate the number of previews per line
 		var per_line = 2;
 		for (; per_line * (preview_width + PREVIEW_PADDING) +
-		       PREVIEW_PADDING < scrolled.embed.viewport.width;
+		       PREVIEW_PADDING < embed.width;
 		     per_line++);
 		per_line--;
 		
@@ -330,7 +329,7 @@ internal class Ease.WelcomeWindow : Gtk.Window
 		}
 
 		// find the initial x position of previews
-		var x_origin = scrolled.embed.viewport.width / 2 -
+		var x_origin = embed.width / 2 -
 		    (preview_width * per_line + PREVIEW_PADDING * (per_line - 1)) / 2;
 
 		// the y position in pixels
@@ -395,16 +394,16 @@ internal class Ease.WelcomeWindow : Gtk.Window
 		}
 
 		// set the size of the background
-		preview_background.width = scrolled.embed.viewport.width;
+		preview_background.width = embed.width;
 		preview_background.height = x_position != 0
 		                          ? y_pixels + preview_width * preview_aspect +
 		                            PREVIEW_VERT_PADDING
 		                          : y_pixels + PREVIEW_VERT_PADDING;
 
 		// always fill the background
-		if (preview_background.height < scrolled.embed.viewport.height)
+		if (preview_background.height < embed.height)
 		{
-			preview_background.height = scrolled.embed.viewport.height;
+			preview_background.height = embed.height;
 		}
 	}
 	

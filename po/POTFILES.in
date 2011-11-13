@@ -62,21 +62,22 @@ ease/ease-inspector-transition-pane.vala
 ease/ease-inspector.vala
 ease/ease-main.vala
 ease/ease-player.vala
+ease/ease-scrollable-embed.vala
 ease/ease-selection-rectangle.vala
 ease/ease-slide-actor.vala
 ease/ease-slide-button-panel.vala
 ease/ease-slide-sorter.vala
 ease/ease-welcome-actor.vala
 ease/ease-welcome-window.vala
-[type: gettext/glade]data/ui/background.ui
-[type: gettext/glade]data/ui/editor-window.ui
-[type: gettext/glade]data/ui/import-widget.ui
-[type: gettext/glade]data/ui/inspector-element-image.ui
-[type: gettext/glade]data/ui/inspector-element-none.ui
-[type: gettext/glade]data/ui/inspector-element-pdf.ui
-[type: gettext/glade]data/ui/inspector-element-shape.ui
-[type: gettext/glade]data/ui/inspector-element-text.ui
-[type: gettext/glade]data/ui/inspector-element-video.ui
-[type: gettext/glade]data/ui/inspector-slide.ui
-[type: gettext/glade]data/ui/progress-dialog.ui
-[type: gettext/glade]data/ui/welcome-window.ui
+data/ui/background.ui
+data/ui/editor-window.ui
+data/ui/import-widget.ui
+data/ui/inspector-element-image.ui
+data/ui/inspector-element-none.ui
+data/ui/inspector-element-pdf.ui
+data/ui/inspector-element-shape.ui
+data/ui/inspector-element-text.ui
+data/ui/inspector-element-video.ui
+data/ui/inspector-slide.ui
+data/ui/progress-dialog.ui
+data/ui/welcome-window.ui

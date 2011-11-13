@@ -17,7 +17,6 @@ libease_core_@EASE_CORE_VERSION@_la_SOURCES = \
 	ease-enums.vala \
 	ease-gradient.vala \
 	ease-html-exporter.vala \
-	ease-icon-view.vala \
 	ease-image-actor.vala \
 	ease-image-element.vala \
 	ease-image.vala \
@@ -27,8 +26,6 @@ libease_core_@EASE_CORE_VERSION@_la_SOURCES = \
 	ease-plugin-import-service.vala \
 	ease-pdf-actor.vala \
 	ease-pdf-element.vala \
-	ease-scrolled-embed.vala \
-	ease-scrolled-embed-window.vala \
 	ease-shape-element.vala \
 	ease-slide.vala \
 	ease-temp.vala \
@@ -59,10 +56,6 @@ libease_core_@EASE_CORE_VERSION@_la_SOURCES = \
 	sourcelist/source-view.vala \
 	$(NULL)
 
-$(top_srcdir)/vapi/ease-core-@EASE_CORE_VERSION@.vapi: libease-core-@EASE_CORE_VERSION@.la
-
-ease-core.h: libease-core-@EASE_CORE_VERSION@.la
-
 # compiler flags
 
 # I don't _want_ to --disable-warnings, but the choices appear to be:
@@ -83,7 +76,7 @@ libease_core_@EASE_CORE_VERSION@_la_VALAFLAGS = \
 	-g \
 	$(NULL)
 
-libease_core_@EASE_CORE_VERSION@_la_LIBS = \
+libease_core_@EASE_CORE_VERSION@_la_LIBADD = \
 	$(top_builddir)/flutter/libflutter-@FLUTTER_VERSION@.la
 
 libease_core_@EASE_CORE_VERSION@_la_CFLAGS = \

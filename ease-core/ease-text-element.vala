@@ -234,8 +234,7 @@ public class Ease.TextElement : Element
 	/**
 	 * Renders a text Element with Cairo.
 	 */
-	public override void cairo_render(Cairo.Context context,
-	                                  bool use_small) throws Error
+	public override void cairo_render(Cairo.Context context) throws Error
 	{
 		var t = display_text;
 		

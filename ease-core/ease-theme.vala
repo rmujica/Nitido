@@ -66,10 +66,10 @@ public class Ease.Theme : GLib.Object
 	public const string S_IDENTIFIER = "slide-identifier";
 	
 	// background types
-	internal const string BACKGROUND_TYPE = "background-type";
-	internal const string BACKGROUND_TYPE_COLOR = "background-type-color";
-	internal const string BACKGROUND_TYPE_GRADIENT = "background-type-gradient";
-	internal const string BACKGROUND_TYPE_IMAGE = "background-type-image";
+	private const string BACKGROUND_TYPE = "background-type";
+	private const string BACKGROUND_TYPE_COLOR = "background-type-color";
+	private const string BACKGROUND_TYPE_GRADIENT = "background-type-gradient";
+	private const string BACKGROUND_TYPE_IMAGE = "background-type-image";
 	public const string BACKGROUND = "background";
 	
 	// text content types

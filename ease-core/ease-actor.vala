@@ -62,14 +62,6 @@ public abstract class Ease.Actor : Clutter.Group
 	 * The widget of the surrounding rectangle in the editor.
 	 */
 	private const uint RECT_WIDTH = 1;
-	
-	/**
-	 * Whether or not the actor is currently being manually resized by the user.
-	 * In subclasses (namely {@link CairoActor}), this can cause frequent redraw
-	 * calls. Therefore, these subclasses can make optimizations and use lower
-	 * resolution media caches (such as that in {@link Image}.
-	 */
-	public bool resizing { get; set; default = false; }
 
 	/**
 	 * Instantiate a new Actor

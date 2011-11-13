@@ -90,7 +90,7 @@ public class Ease.PdfActor : Actor
 		texture.clear();
 		var cr = texture.create();
 		pdf_element.background.cairo_render(cr, (int)width, (int)height,
-		                                    element.parent.parent.path, false);
+		                                    element.parent.parent.path);
 		page.render(cr);
 	}
 }

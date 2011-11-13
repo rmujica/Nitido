@@ -33,7 +33,7 @@ internal class Ease.Handle : Clutter.CairoTexture
 	/**
 	 * The size of the handle.
 	 */
-	private const int SIZE = 25;
+	private const int SIZE = 35;
 	
 	/**
 	 * Creates a Handle. Does automatically set the Handle's position - call
@@ -301,9 +301,6 @@ internal class Ease.Handle : Clutter.CairoTexture
 	
 	private void redraw()
 	{
-		// clear to prevent a white halo from occuring
-		clear();
-		
 		// get a Cairo context
 		var cr = create();
 		

@@ -499,7 +499,7 @@ public class Ease.Document : GLib.Object, UndoSource
 		foreach (var itr in slides)
 		{
 			slides.get(itr, COL_SLIDE, out s);
-			s.cairo_render(context, false);
+			s.cairo_render(context);
 			context.show_page();
 		}
 	

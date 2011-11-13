@@ -3,16 +3,15 @@
 # This file is distributed under the same license as the ease package.
 # Kramer Garay <kramergaray@hotmail.com>, 2010.
 # Jorge González <jorgegonz@svn.gnome.org>, 2010.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ease.master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=ease&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-04-14 17:23+0000\n"
-"PO-Revision-Date: 2011-04-15 11:45+0200\n"
-"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
+"product=ease&component=general\n"
+"POT-Creation-Date: 2010-10-12 13:31+0000\n"
+"PO-Revision-Date: 2010-10-12 16:35+0200\n"
+"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,15 +36,15 @@ msgstr "Guardando «%s»"
 msgid "Temporary directory doesn't exist: %s"
 msgstr "La carpeta temporal no existe: %s"
 
-#: ../ease-core/ease-background.vala:242
+#: ../ease-core/ease-background.vala:241
 msgid "Solid Color"
 msgstr "Color sólido"
 
-#: ../ease-core/ease-background.vala:243
+#: ../ease-core/ease-background.vala:242
 msgid "Gradient"
 msgstr "Degradado"
 
-#: ../ease-core/ease-background.vala:244
+#: ../ease-core/ease-background.vala:243
 msgid "Image"
 msgstr "Imagen"
 
@@ -90,6 +89,8 @@ msgstr "Ya existe un archivo llamado %s. ¿Quiere reemplazarlo?"
 
 #: ../ease-core/ease-dialogs.vala:31
 #, c-format
+#| msgid ""
+#| "This file already exists in %s. Overwriting it will replace its contents."
 msgid ""
 "This file already exists in the directory \"%s\". Overwriting it will "
 "replace its contents."
@@ -186,19 +187,19 @@ msgstr "Error al copiar el archivo"
 msgid "Error loading ImageActor: %s\n"
 msgstr "Error al cargar ImageActor: %s\n"
 
-#: ../ease-core/ease-image-element.vala:86 ../ease/ease-editor-window.vala:516
+#: ../ease-core/ease-image-element.vala:99 ../ease/ease-editor-window.vala:516
 msgid "Error Inserting Image"
 msgstr "Error al insertar la imagen"
 
-#: ../ease-core/ease-image.vala:217
+#: ../ease-core/ease-image.vala:146
 msgid "Stretch"
 msgstr "Estiramiento"
 
-#: ../ease-core/ease-image.vala:218
+#: ../ease-core/ease-image.vala:147
 msgid "Maintain Aspect Ratio"
 msgstr "Mantener la proporción"
 
-#: ../ease-core/ease-image.vala:219
+#: ../ease-core/ease-image.vala:148
 msgid "Do not Scale"
 msgstr "No escalar"
 
@@ -268,160 +269,160 @@ msgstr "Diapositiva _vacía"
 msgid "%s is not a valid identifier"
 msgstr "%s no es un identificador válido"
 
-#: ../ease-core/ease-transitions.vala:220
+#: ../ease-core/ease-transitions.vala:216
 msgid "None"
 msgstr "Ninguna"
 
-#: ../ease-core/ease-transitions.vala:222
+#: ../ease-core/ease-transitions.vala:218
 msgid "Fade"
 msgstr "Desvanecer"
 
-#: ../ease-core/ease-transitions.vala:224
+#: ../ease-core/ease-transitions.vala:220
 msgid "Slide"
 msgstr "Diapositiva"
 
-#: ../ease-core/ease-transitions.vala:226
+#: ../ease-core/ease-transitions.vala:222
 msgid "Drop"
 msgstr "Soltar"
 
-#: ../ease-core/ease-transitions.vala:228
+#: ../ease-core/ease-transitions.vala:224
 msgid "Pivot"
 msgstr "Pivotar"
 
-#: ../ease-core/ease-transitions.vala:230
+#: ../ease-core/ease-transitions.vala:226
 msgid "Flip"
 msgstr "Voltear"
 
-#: ../ease-core/ease-transitions.vala:232
+#: ../ease-core/ease-transitions.vala:228
 msgid "Revolving Door"
 msgstr "Puerta giratoria"
 
-#: ../ease-core/ease-transitions.vala:234
+#: ../ease-core/ease-transitions.vala:230
 msgid "Reveal"
 msgstr "Mostrar"
 
-#: ../ease-core/ease-transitions.vala:236
+#: ../ease-core/ease-transitions.vala:232
 msgid "Fall"
 msgstr "Caída"
 
-#: ../ease-core/ease-transitions.vala:238
+#: ../ease-core/ease-transitions.vala:234
 msgid "Slats"
 msgstr "Tablillas"
 
-#: ../ease-core/ease-transitions.vala:240
+#: ../ease-core/ease-transitions.vala:236
 msgid "Open Door"
 msgstr "Abrir puerta"
 
-#: ../ease-core/ease-transitions.vala:242
+#: ../ease-core/ease-transitions.vala:238
 msgid "Explode"
 msgstr "Explotar"
 
-#: ../ease-core/ease-transitions.vala:244
+#: ../ease-core/ease-transitions.vala:240
 msgid "Assemble"
 msgstr "Ensamblar"
 
-#: ../ease-core/ease-transitions.vala:246
+#: ../ease-core/ease-transitions.vala:242
 msgid "Zoom"
 msgstr "Ampliación"
 
-#: ../ease-core/ease-transitions.vala:248
+#: ../ease-core/ease-transitions.vala:244
 msgid "Panel"
 msgstr "Panel"
 
-#: ../ease-core/ease-transitions.vala:250
+#: ../ease-core/ease-transitions.vala:246
 msgid "Intersperse Contents"
 msgstr "Intercalar contenido"
 
-#: ../ease-core/ease-transitions.vala:252
+#: ../ease-core/ease-transitions.vala:248
 msgid "Spin Contents"
 msgstr "Girar contenido"
 
-#: ../ease-core/ease-transitions.vala:254
+#: ../ease-core/ease-transitions.vala:250
 msgid "Spring Contents"
 msgstr "Aparecer contenido"
 
-#: ../ease-core/ease-transitions.vala:256
+#: ../ease-core/ease-transitions.vala:252
 msgid "Swing Contents"
 msgstr "Oscilar contenido"
 
-#: ../ease-core/ease-transitions.vala:258
+#: ../ease-core/ease-transitions.vala:254
 msgid "Slide Contents"
 msgstr "Contenido de las diapositivas"
 
-#: ../ease-core/ease-transitions.vala:260
+#: ../ease-core/ease-transitions.vala:256
 msgid "Zoom Contents"
 msgstr "Ampliar contenido"
 
-#: ../ease-core/ease-transitions.vala:263
-#: ../ease-core/ease-transitions.vala:375
+#: ../ease-core/ease-transitions.vala:259
+#: ../ease-core/ease-transitions.vala:371
 msgid "Undefined"
 msgstr "Indefinido"
 
-#: ../ease-core/ease-transitions.vala:340
+#: ../ease-core/ease-transitions.vala:336
 msgid "Up"
 msgstr "Arriba"
 
-#: ../ease-core/ease-transitions.vala:342
+#: ../ease-core/ease-transitions.vala:338
 msgid "Down"
 msgstr "Abajo"
 
-#: ../ease-core/ease-transitions.vala:344
+#: ../ease-core/ease-transitions.vala:340
 msgid "Left"
 msgstr "Izquierda"
 
-#: ../ease-core/ease-transitions.vala:346
+#: ../ease-core/ease-transitions.vala:342
 msgid "Right"
 msgstr "Derecha"
 
-#: ../ease-core/ease-transitions.vala:348
+#: ../ease-core/ease-transitions.vala:344
 msgid "Bottom"
 msgstr "Abajo"
 
-#: ../ease-core/ease-transitions.vala:350
+#: ../ease-core/ease-transitions.vala:346
 msgid "Top"
 msgstr "Arriba"
 
-#: ../ease-core/ease-transitions.vala:352
+#: ../ease-core/ease-transitions.vala:348
 msgid "Center"
 msgstr "Centrar"
 
-#: ../ease-core/ease-transitions.vala:354
+#: ../ease-core/ease-transitions.vala:350
 msgid "Top Left"
 msgstr "Arriba a la izquierda"
 
-#: ../ease-core/ease-transitions.vala:356
+#: ../ease-core/ease-transitions.vala:352
 msgid "Top Right"
 msgstr "Arriba a la derecha"
 
-#: ../ease-core/ease-transitions.vala:358
+#: ../ease-core/ease-transitions.vala:354
 msgid "Bottom Left"
 msgstr "Abajo a la izquierda"
 
-#: ../ease-core/ease-transitions.vala:360
+#: ../ease-core/ease-transitions.vala:356
 msgid "Bottom Right"
 msgstr "Abajo a la derecha"
 
-#: ../ease-core/ease-transitions.vala:362
+#: ../ease-core/ease-transitions.vala:358
 msgid "Top to Bottom"
 msgstr "De arriba a abajo"
 
-#: ../ease-core/ease-transitions.vala:364
+#: ../ease-core/ease-transitions.vala:360
 msgid "Bottom to Top"
 msgstr "De abajo a arriba"
 
-#: ../ease-core/ease-transitions.vala:366
+#: ../ease-core/ease-transitions.vala:362
 msgid "Left to Right"
 msgstr "De izquierda a derecha"
 
-#: ../ease-core/ease-transitions.vala:368
+#: ../ease-core/ease-transitions.vala:364
 msgid "Right to Left"
 msgstr "De derecha a izquierda"
 
-#: ../ease-core/ease-transitions.vala:370
+#: ../ease-core/ease-transitions.vala:366
 msgid "In"
 msgstr "Dentro"
 
-#: ../ease-core/ease-transitions.vala:372
+#: ../ease-core/ease-transitions.vala:368
 msgid "Out"
 msgstr "Fuera"
 
@@ -434,15 +435,15 @@ msgstr "No existe la carpeta para quitar: %s"
 msgid "Your browser does not support the video tag"
 msgstr "Su navegador no soporta la etiqueta de video"
 
-#: ../ease-core/ease-video-element.vala:262
+#: ../ease-core/ease-video-element.vala:261
 msgid "Stop playback"
 msgstr "Detener la reproducción"
 
-#: ../ease-core/ease-video-element.vala:263
+#: ../ease-core/ease-video-element.vala:262
 msgid "Loop"
 msgstr "Bucle"
 
-#: ../ease-core/ease-video-element.vala:264
+#: ../ease-core/ease-video-element.vala:263
 msgid "Continue to next slide"
 msgstr "Continuar hasta la siguiente diapositiva"
 
@@ -577,21 +578,21 @@ msgstr "Documentos PDF"
 msgid "Error Inserting PDF"
 msgstr "Error al insertar el PDF"
 
-#: ../ease/ease-editor-window.vala:722
+#: ../ease/ease-editor-window.vala:725
 msgid "Save Document"
 msgstr "Guardar documento"
 
-#: ../ease/ease-editor-window.vala:738
+#: ../ease/ease-editor-window.vala:741
 msgid "Error Saving Document"
 msgstr "Error al guardar el documento"
 
 #. create the dialog
-#: ../ease/ease-editor-window.vala:817
+#: ../ease/ease-editor-window.vala:820
 msgid "Select Color"
 msgstr "Seleccionar color"
 
 #. create a font selection dialog
-#: ../ease/ease-editor-window.vala:884
+#: ../ease/ease-editor-window.vala:887
 msgid "Select Font"
 msgstr "Seleccionar tipografía"
 
@@ -607,15 +608,6 @@ msgstr "Importar multimedia"
 #: ../ease/ease-import-dialog.vala:64
 msgid "Downloading Media Files"
 msgstr "Descargar archivos multimedia"
-
-#. create checkboxes to filter CC licenses
-#: ../ease/ease-import-flickr-service.vala:80
-msgid "Share Alike"
-msgstr "Compartir igual"
-
-#: ../ease/ease-import-flickr-service.vala:82
-msgid "For Commercial Use"
-msgstr "Para uso comercial"
 
 #: ../ease/ease-inspector-transition-pane.vala:73
 msgid "Effect"
@@ -694,222 +686,20 @@ msgstr "Personalizada"
 msgid "%i by %i"
 msgstr "%i por %i"
 
-#: ../data/ui/background.ui.h:1
-msgid "Background Color"
-msgstr "Color de fondo"
-
-#: ../data/ui/background.ui.h:2
-#| msgid "Select Background Image"
-msgid "Background Gradient"
-msgstr "Degradado del fondo"
-
-#: ../data/ui/background.ui.h:3
-#| msgid "Select Background Image"
-msgid "Background Image"
-msgstr "Imagen de fondo"
-
-#: ../data/ui/background.ui.h:4
-#| msgid "Select Background Image"
-msgid "Background Style"
-msgstr "Estilo del fondo"
-
-#: ../data/ui/background.ui.h:5
-msgid "Fill Mode"
-msgstr "Modo de relleno"
-
-#: ../data/ui/background.ui.h:6
-#| msgid "Gradient"
-msgid "Gradient Angle"
-msgstr "Ángulo de degradado"
-
-#: ../data/ui/background.ui.h:7
-#| msgid "Gradient"
-msgid "Reverse Gradient"
-msgstr "Degradado invertido"
-
-#: ../data/ui/editor-window.ui.h:1
-#| msgid "Slide"
-msgid "Add Slide"
-msgstr "Añadir diapositiva"
-
-#: ../data/ui/editor-window.ui.h:2
-msgid "Editor"
-msgstr "Editor"
-
-#: ../data/ui/editor-window.ui.h:3
-msgid "Lower to _Bottom"
-msgstr "De arri_ba a abajo"
-
-#: ../data/ui/editor-window.ui.h:4
-msgid "Media from the _Web"
-msgstr "Medios desde la _web"
-
-#: ../data/ui/editor-window.ui.h:5
-#| msgid "Export as PostScript"
-msgid "Post_Script"
-msgstr "Post_Script"
-
-#: ../data/ui/editor-window.ui.h:6
-#| msgid "Presentation"
-msgid "Present"
-msgstr "Presentar"
-
-#: ../data/ui/editor-window.ui.h:7
-msgid "Raise to _Top"
-msgstr "Elevar a la ci_ma"
-
-#: ../data/ui/editor-window.ui.h:8
-msgid "Redo"
-msgstr "Rehacer"
-
-#: ../data/ui/editor-window.ui.h:9
-msgid "Remove Slide"
-msgstr "Quitar diapositiva"
-
-#: ../data/ui/editor-window.ui.h:10
-msgid "Save"
-msgstr "Guardar"
-
-#: ../data/ui/editor-window.ui.h:11
-msgid "Save a _Copy"
-msgstr "Guardar una _copia"
-
-#: ../data/ui/editor-window.ui.h:12
-msgid "Show Inspector"
-msgstr "Mostrar inspector"
-
-#: ../data/ui/editor-window.ui.h:13
-#| msgid "Slide Contents"
-msgid "Slide Sorter"
-msgstr "Clasificador de diapositivas"
-
-#: ../data/ui/editor-window.ui.h:14
-msgid "Undo"
-msgstr "Deshacer"
-
-#: ../data/ui/editor-window.ui.h:15
-msgid "Zoom to _Fit"
-msgstr "Ampliar _hasta ajustar"
-
-#: ../data/ui/editor-window.ui.h:16
-msgid "_Edit"
-msgstr "_Editar"
-
-#: ../data/ui/editor-window.ui.h:17
-#| msgid "Ease Presentation"
-msgid "_Export Presentation"
-msgstr "_Exportar presentación"
-
-#: ../data/ui/editor-window.ui.h:18
-msgid "_File"
-msgstr "_Archivo"
-
-#: ../data/ui/editor-window.ui.h:19
-msgid "_HTML"
-msgstr "_HTML"
-
-#: ../data/ui/editor-window.ui.h:20
-msgid "_Help"
-msgstr "Ay_uda"
-
-#: ../data/ui/editor-window.ui.h:21
-#| msgid "Image"
-msgid "_Image"
-msgstr "_Imagen"
-
-#: ../data/ui/editor-window.ui.h:22 ../data/ui/import-widget.ui.h:2
-#| msgid "Insert Image"
-msgid "_Insert"
-msgstr "_Insertar"
-
-#: ../data/ui/editor-window.ui.h:23
-msgid "_Lower"
-msgstr "I_nferior"
-
-#: ../data/ui/editor-window.ui.h:24 ../data/ui/inspector-element-shape.ui.h:1
-msgid "_Oval"
-msgstr "Ó_valo"
-
-#: ../data/ui/editor-window.ui.h:25
-msgid "_PDF"
-msgstr "_PDF"
-
-#: ../data/ui/editor-window.ui.h:26
-msgid "_PDF Document"
-msgstr "Documento _PDF"
-
-#: ../data/ui/editor-window.ui.h:27
-msgid "_Raise"
-msgstr "S_ubir"
-
-#: ../data/ui/editor-window.ui.h:28 ../data/ui/inspector-element-shape.ui.h:2
-msgid "_Rectangle"
-msgstr "_Rectángulo"
-
-#: ../data/ui/editor-window.ui.h:29
-msgid "_Text"
-msgstr "_Texto"
-
-#: ../data/ui/editor-window.ui.h:30
-msgid "_Video"
-msgstr "_Vídeo"
-
-#: ../data/ui/editor-window.ui.h:31
-msgid "_View"
-msgstr "_Ver"
-
-#: ../data/ui/import-widget.ui.h:1
-msgid "No Results Found"
-msgstr "No se encontró ningún resultado"
-
-#: ../data/ui/inspector-element-image.ui.h:1
-#| msgid "Select Background Image"
-msgid "Select Image"
-msgstr "Seleccionar imagen"
-
-#: ../data/ui/inspector-element-none.ui.h:1
-msgid "Nothing is selected"
-msgstr "No hay nada seleccionado."
-
-#: ../data/ui/inspector-element-pdf.ui.h:1
-msgid "Allow page change"
-msgstr "Permitir cambiar de página"
-
-#: ../data/ui/inspector-element-pdf.ui.h:2
-msgid "Displayed Page"
-msgstr "Página mostrada"
-
-#: ../data/ui/inspector-element-video.ui.h:1
-msgid "When video playback ends:"
-msgstr "Cuando termina la reproducción del vídeo:"
-
-#: ../data/ui/inspector-element-video.ui.h:2
-#| msgid "Automatically"
-msgid "_Automatically start playback"
-msgstr "Iniciar reproducción _automáticamente"
-
-#: ../data/ui/inspector-element-video.ui.h:3
-#| msgid "_Title slide"
-msgid "_Fill Slide"
-msgstr "_Rellenar dispositiva"
-
-#: ../data/ui/inspector-element-video.ui.h:4
-msgid "_Mute Audio"
-msgstr "_Silenciar sonido"
-
-#: ../data/ui/welcome-window.ui.h:1
-#| msgid "New Presentation"
-msgid "_New presentation"
-msgstr "Presentación _nueva"
-
 #~ msgid "Open File"
 #~ msgstr "Abrir archivo"
 
 #~ msgid "Error loading background: %s"
 #~ msgstr "Error al cargar en segundo plano: %s"
 
+#~ msgid "New Presentation"
+#~ msgstr "Presentación nueva"
+
 #~ msgid "New"
 #~ msgstr "Nueva"
+
+#~ msgid "Presentation"
+#~ msgstr "Presentación"
 
 #~ msgid "Theme"
 #~ msgstr "Tema"

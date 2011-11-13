@@ -90,7 +90,7 @@ public class Ease.PdfElement : MediaElement
 		var surface = new Cairo.ImageSurface(Cairo.Format.ARGB32,
 		                                     (int)width, (int)height);
 		var cr = new Cairo.Context(surface);
-		cairo_render(cr, false);
+		cairo_render(cr);
 		
 		var path = Path.build_filename(dir, exporter.render_index.to_string());
 		surface.write_to_png(path);
@@ -114,12 +114,11 @@ public class Ease.PdfElement : MediaElement
 		              "\" alt=\"PDF\" />";
 	}
 	
-	public override void cairo_render(Cairo.Context context,
-	                                  bool use_small) throws Error
+	public override void cairo_render(Cairo.Context context) throws Error
 	{
 		// render the background
 		background.cairo_render(context, (int)width, (int)height,
-		                        parent.parent.path, use_small);
+		                        parent.parent.path);
 		
 		// get the current page
 		var page = pdf_doc.get_page(displayed_page);

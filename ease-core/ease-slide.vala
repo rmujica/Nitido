@@ -504,34 +504,55 @@ public class Ease.Slide : GLib.Object, UndoSource
 	 *
 	 * @param context The Cairo.Context to draw to.
 	 */
-	public void cairo_render(Cairo.Context context,
-	                         bool use_small) throws GLib.Error
+	public void cairo_render(Cairo.Context context) throws GLib.Error
 	{
 		if (parent == null)
 			throw new GLib.Error(0, 0, "Slide must have a parent document");
 		
-		cairo_render_sized(context, parent.width, parent.height, use_small);
+		cairo_render_sized(context, parent.width, parent.height);
 	}
 	
 	/**
-	 * Draws the slide with Cairo at a specified size.
+	 * Draws the Slide to a thumbnail-sized Cairo.Context. Will call
+	 * {@link Element.cairo_render_small} instead of
+	 * {@link Element.cairo_render}.
 	 *
 	 * @param context The Cairo.Context to draw to.
-	 * @param w The width to render at.
-	 * @param h The height to render at.
 	 */
-	public void cairo_render_sized(Cairo.Context context, int w, int h,
-	                               bool use_small) throws GLib.Error
+	public void cairo_render_small(Cairo.Context context)
 	{
 		context.save();
-		cairo_render_background(context, w, h, use_small);
+		cairo_render_background(context, parent.width, parent.height);
 		context.restore();
 		
 		foreach (var e in elements)
 		{
 			context.save();
 			context.translate(e.x, e.y);
-			e.cairo_render(context, use_small);
+			e.cairo_render_small(context);
+			context.restore();
+		}
+	}
+	
+	/** 
+	 * Draws the {@link Slide} to a Cairo.Context at a specified size.
+	 *
+	 * @param context The Cairo.Context to draw to.
+	 * @param w The width to render at.
+	 * @param h The height to render at.
+	 */
+	public void cairo_render_sized(Cairo.Context context,
+	                               int w, int h) throws GLib.Error
+	{
+		context.save();
+		cairo_render_background(context, w, h);
+		context.restore();
+		
+		foreach (var e in elements)
+		{
+			context.save();
+			context.translate(e.x, e.y);
+			e.cairo_render(context);
 			context.restore();
 		}
 	}
@@ -544,12 +565,10 @@ public class Ease.Slide : GLib.Object, UndoSource
 	 * @param h The height to render at.
 	 */
 	public void cairo_render_background(Cairo.Context cr,
-	                                    int w, int h,
-	                                    bool use_small) throws GLib.Error
+	                                    int w, int h) throws GLib.Error
 	{
 		background.cairo_render(cr, w, h,
-		                        parent == null ? theme.path : parent.path,
-		                        use_small);
+		                        parent == null ? theme.path : parent.path);
 	}
 	
 	/**
@@ -588,7 +607,7 @@ public class Ease.Slide : GLib.Object, UndoSource
 				var surface = new Cairo.ImageSurface(Cairo.Format.ARGB32,
 						                             (int)width, (int)height);
 				var cr = new Cairo.Context(surface);
-				cairo_render(cr, false);
+				cairo_render(cr);
 		
 				var path = Path.build_filename(
 					dir, exporter.render_index.to_string());

@@ -22,21 +22,34 @@
 public class Ease.ImageElement : MediaElement
 {
 	private const string UI_FILE_PATH = "inspector-element-image.ui";
+	private const int CACHE_SIZE = 100;
+	
+	private Gdk.Pixbuf small_cache
+	{
+		get
+		{
+			if (small_cache_l != null) return small_cache_l;
+			var filename = Path.build_path("/", parent.parent.path, filename);
+			return small_cache_l = new Gdk.Pixbuf.from_file_at_size(filename,
+			                                                        CACHE_SIZE,
+			                                                        CACHE_SIZE);
+		}
+		set { small_cache_l = value; }
+	}
+	private Gdk.Pixbuf small_cache_l;
 	
 	/**
-	 * The Image represented by the ImageElement.
+	 * Create a new element.
 	 */
-	private Image image;
-	
-	construct
+	public ImageElement()
 	{
-		image = new Image();
+		signals();
 	}
 	
 	public override void signals()
 	{
 		base.signals();
-		notify["filename"].connect(() => image.filename = filename);
+		notify["filename"].connect(() => small_cache_l = null);
 	}
 	
 	internal ImageElement.from_json(Json.Object obj)
@@ -51,7 +64,7 @@ public class Ease.ImageElement : MediaElement
 	
 	public override void cairo_free_cache()
 	{
-		image.notify["filename"](null);
+		small_cache = null;
 	}
 	
 	public override Gtk.Widget inspector_widget()
@@ -122,12 +135,28 @@ public class Ease.ImageElement : MediaElement
 	/**
 	 * Renders an image Element with Cairo.
 	 */
-	public override void cairo_render(Cairo.Context context,
-	                                  bool use_small) throws Error
+	public override void cairo_render(Cairo.Context context) throws Error
 	{
-		image.set_cairo(context, (int)width, (int)height,
-		                parent.parent.path, use_small);
+		var filename = Path.build_path("/", parent.parent.path, filename);
+		
+		// load the image
+		var pixbuf = new Gdk.Pixbuf.from_file_at_scale(filename,
+		                                               (int)width,
+		                                               (int)height,
+		                                               false);
+		
+		Gdk.cairo_set_source_pixbuf(context, pixbuf, 0, 0);
 		context.rectangle(0, 0, width, height);
+		context.fill();
+	}
+	
+	public override void cairo_render_small(Cairo.Context context) throws Error
+	{
+		var scaled = small_cache.scale_simple((int)width, (int)height,
+		                                      Gdk.InterpType.NEAREST);
+		Gdk.cairo_set_source_pixbuf(context, scaled, 0, 0);
+		context.rectangle(0, 0, width, height);
+		context.scale(40, 40);
 		context.fill();
 	}
 }
