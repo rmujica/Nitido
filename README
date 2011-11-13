@@ -1,4 +1,6 @@
 Ease: A presentation application for the GNOME Desktop
+NOT!
+This is Nitido: An Ease fork.
 
 Building
 ----------------------
@@ -30,7 +32,7 @@ look like this :
 - gir1.0-clutter-gtk-0.10
 ...
 
-Run the autogen script by typing : `./autogen.sh`
+To compile, first run './configure'
 
 Then, type `make` or `make CC=clang` if you want to use clang.
 
